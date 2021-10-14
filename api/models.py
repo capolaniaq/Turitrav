@@ -1,6 +1,8 @@
 """Models Module"""
 
 from django.db import models
+from pygments.lexers import get_lexer_by_name
+from pygments.formatters.html import HtmlFormatter
 
 
 class User(models.Model):

@@ -5,8 +5,8 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from api import views
 
 urlpatterns = [
-    path('user/', views.user_list),
-    path('user/<int:pk>/', views.user_detail),
+    path('user/', views.UserList.as_view()),
+    path('user/<int:pk>/', views.UserDetail.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
