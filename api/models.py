@@ -1,44 +1,66 @@
 """Models Module"""
 
 from django.db import models
-from pygments.lexers import get_lexer_by_name
-from pygments.formatters.html import HtmlFormatter
-from pygments import highlight
-from pygments.lexers import get_all_lexers
-from pygments.styles import get_all_styles
+from django.contrib.auth.models import User
 
 
-LEXERS = [item for item in get_all_lexers() if item[1]]
-LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])
-STYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])
-
-class Uset(models.Model):
+class Owner(models.Model):
     """class  Normal User"""
-    username = models.CharField(max_length=50, blank=False)
-    email = models.CharField(max_length=50, blank=False)
+    name = models.CharField(max_length=50, blank=False)
+    email = models.EmailField(blank=False)
     password = models.CharField(max_length=50, blank=False)
     create = models.DateTimeField(auto_now_add=True)
 
-    owner = models.ForeignKey('auth.User', related_name='users', on_delete=models.CASCADE)
-    highlighted = models.TextField()
-    create = models.DateTimeField(auto_now_add=True)
-    title = models.CharField(max_length=100, blank=True, default='')
-    code = models.TextField()
-    linenos = models.BooleanField(default=False)
-    language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)
-    style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)
-
     def __str__(self):
-        return '{0}. {1}'.format(self.username, self.email)
-    def save(self, *args, **kwargs):
-    
-        lexer = get_lexer_by_name(self.language)
-        linenos = 'table' if self.linenos else False
-        options = {'title': self.title} if self.title else {}
-        formatter = HtmlFormatter(style=self.style, linenos=linenos,
-                              full=True, **options)
-        self.highlighted = highlight(self.code, lexer, formatter)
-        super(Uset, self).save(*args, **kwargs)
+        return '{0}. {1}'.format(self.name, self.email)
 
     class Meta:
         ordering = ['create']
+
+class Department(models.Model):
+    """department class"""
+    name = models.CharField(max_length=200, blank=False)
+
+    def __str__(self):
+        return self.name
+
+class City(models.Model):
+    """City class, inherits of Deparment"""
+    iddepartment = models.ForeignKey(Department, on_delete=models.CASCADE)
+    name = models.CharField(max_length=200, blank=False)
+
+    def __str__(self):
+        return self.name
+
+class Place(models.Model):
+    """Place class, inherits of City and Owner"""
+    idcity = models.ForeignKey(City, on_delete=models.CASCADE)
+    idowner = models.ForeignKey(Owner, on_delete=models.CASCADE)
+    name = models.CharField(max_length=200, blank=False)
+    description = models.TextField(max_length=500, blank=False)
+    create = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return "{}:{}".format(self.name, self.description)
+
+class Activity(models.Model):
+    """Class activity"""
+    tyactivity = models.CharField(max_length=100, blank=False)
+
+    def __str__(self):
+        return self.tyactivity
+
+class Place_activity(models.Model):
+    """class place_activity"""
+    idplace = models.ForeignKey(Place, on_delete=models.CASCADE)
+    idactivity = models.ForeignKey(Activity, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return "Place {}: activity {}".format(Place.name, Activity.tyactivity)
+
+class Review(models.Model):
+    """Class Review"""
+    idplace_activity = models.ForeignKey(Place_activity, on_delete=models.CASCADE)
+    iduser = models.ForeignKey(User, on_delete=models.CASCADE)
+    review = models.TextField(max_length=500, blank=False)
+
