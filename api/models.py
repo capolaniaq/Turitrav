@@ -18,20 +18,18 @@ class Uset(models.Model):
     email = models.CharField(max_length=50, blank=False)
     password = models.CharField(max_length=50, blank=False)
     create = models.DateTimeField(auto_now_add=True)
-    
+
     owner = models.ForeignKey('auth.User', related_name='users', on_delete=models.CASCADE)
     highlighted = models.TextField()
-    created = models.DateTimeField(auto_now_add=True)
+    create = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=100, blank=True, default='')
     code = models.TextField()
     linenos = models.BooleanField(default=False)
     language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)
     style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)
 
-    class Meta:
-        ordering = ['create']
-
-
+    def __str__(self):
+        return '{0}. {1}'.format(self.username, self.email)
     def save(self, *args, **kwargs):
     
         lexer = get_lexer_by_name(self.language)
@@ -41,3 +39,6 @@ class Uset(models.Model):
                               full=True, **options)
         self.highlighted = highlight(self.code, lexer, formatter)
         super(Uset, self).save(*args, **kwargs)
+
+    class Meta:
+        ordering = ['create']
