@@ -1,21 +1,23 @@
-"""Models Module"""
-
+"""models module"""
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
 
+
+class User(AbstractUser):
+    is_owner = models.BooleanField(default=False)
+    is_commonuser = models.BooleanField(default=True)
 
 class Owner(models.Model):
-    """class  Normal User"""
-    name = models.CharField(max_length=50, blank=False)
-    email = models.EmailField(blank=False)
-    password = models.CharField(max_length=50, blank=False)
-    create = models.DateTimeField(auto_now_add=True)
+    id = models.IntegerField(blank=False, primary_key=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, unique=True)
 
     def __str__(self):
-        return '{0}. {1}'.format(self.name, self.email)
+        atributes = self.__dict__
+        for key, value in atributes.items():
+            if key is 'id':
+                return str(value)
+        return '1'
 
-    class Meta:
-        ordering = ['create']
 
 class Department(models.Model):
     """department class"""
@@ -35,13 +37,13 @@ class City(models.Model):
 class Place(models.Model):
     """Place class, inherits of City and Owner"""
     idcity = models.ForeignKey(City, on_delete=models.CASCADE)
-    idowner = models.ForeignKey(Owner, on_delete=models.CASCADE)
+    idowner = models.ForeignKey(Owner, on_delete=models.CASCADE, serialize=True)
     name = models.CharField(max_length=200, blank=False)
     description = models.TextField(max_length=500, blank=False)
     create = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return "{}:{}".format(self.name, self.description)
+        return self.name
 
 class Activity(models.Model):
     """Class activity"""
@@ -63,4 +65,3 @@ class Review(models.Model):
     idplace_activity = models.ForeignKey(Place_activity, on_delete=models.CASCADE)
     iduser = models.ForeignKey(User, on_delete=models.CASCADE)
     review = models.TextField(max_length=500, blank=False)
-

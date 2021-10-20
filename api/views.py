@@ -1,31 +1,101 @@
-"""views Module"""
-from api.models import Owner
-from api.serializers import *
-from rest_framework import generics
-from django.contrib.auth.models import User
+from django.contrib.auth.models import Group
+from django.contrib.auth import get_user_model
+from api.models import *
+from rest_framework import viewsets
 from rest_framework import permissions
-from api.permissions import IsOwnerOrReadOnly
-from rest_framework.response import Response
-from django.views.decorators.cache import never_cache
-from django.views.decorators.csrf import csrf_protect
+from api.serializers import *
+from django.urls import reverse_lazy
 from django.views.generic.edit import FormView
-from django.contrib.auth import login,logout,authenticate
 from django.http import HttpResponseRedirect
 from django.contrib.auth.forms import AuthenticationForm
-from rest_framework.authtoken.models import Token
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.authentication import TokenAuthentication
-from rest_framework.views import APIView
-from rest_framework import status
-from rest_framework.response import Response
-from django.urls import reverse_lazy
+from django.contrib.auth import login,logout,authenticate
 from django.utils.decorators import method_decorator
+from django.views.decorators.cache import never_cache
+from django.views.decorators.csrf import csrf_protect
+
+User = get_user_model()
+
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = User.objects.all().order_by('-date_joined')
+    serializer_class = UserSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+class GroupViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+class OwnerViewSet(viewsets.ModelViewSet):
+    """
+        API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Owner.objects.all()
+    serializer_class = OwnerSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+class PlaceViewSet(viewsets.ModelViewSet):
+    """
+        API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Place.objects.all()
+    serializer_class = PlaceSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+class DepartmentViewSet(viewsets.ModelViewSet):
+    """
+        API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Department.objects.all()
+    serializer_class = DepartmentSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+class CityViewSet(viewsets.ModelViewSet):
+    """
+        API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = City.objects.all()
+    serializer_class = CitySerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+class Place_aViewSet(viewsets.ModelViewSet):
+    """
+        API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Place_activity.objects.all()
+    serializer_class = Place_aSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+class ActivityViewSet(viewsets.ModelViewSet):
+    """
+        API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Activity.objects.all()
+    serializer_class = ActivitySerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+class ReviewViewSet(viewsets.ModelViewSet):
+    """
+        API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializer
+    permission_classes = [permissions.IsAuthenticated]
 
 
 class Login(FormView):
-    template_name = "login.html"
+    template_name = "users/login.html"
     form_class = AuthenticationForm
-    success_url = reverse_lazy('api:owner_list')
+    success_url = reverse_lazy('api:user_list')
 
     @method_decorator(csrf_protect)
     @method_decorator(never_cache)
@@ -41,108 +111,3 @@ class Login(FormView):
         if token:
             login(self.request, form.get_user())
             return super(Login,self).form_valid(form)
-
-
-class OwnerList(generics.ListCreateAPIView):
-    queryset = Owner.objects.all()
-    serializer_class = OwnerSerializer
-    permission_classes = (IsAuthenticated,)
-    authentication_class = (TokenAuthentication,)
-
-
-class Logout(APIView):
-    def get(self,request, format = None):
-        request.user.auth_token.delete()
-        logout(request)
-        return Response(status = status.HTTP_200_OK)
-
-
-class UsetDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = User.objects.all()
-    serializer_class = OwnerSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly,
-                      IsOwnerOrReadOnly]
-
-"""view for user class"""
-class UserList(generics.ListAPIView):
-    queryset = User.objects.all()
-    serializer_class = OwnerSerializer
-
-class UserDetail(generics.RetrieveAPIView):
-    queryset = User.objects.all()
-    serializer_class = OwnerSerializer
-
-
-"""views for Owner class"""
-class OwnerList(generics.ListCreateAPIView):
-    queryset = Owner.objects.all()
-    serializer_class = OwnerSerializer
-
-class OwnerDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Owner.objects.all()
-    serializer_class = OwnerSerializer
-
-
-"""views for place class"""
-class PlaceList(generics.ListCreateAPIView):
-    queryset = Place.objects.all()
-    serializer_class = PlaceSerializer
-
-class PlaceDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Place.objects.all()
-    serializer_class = PlaceSerializer
-
-
-"""views for city class"""
-class CityList(generics.ListCreateAPIView):
-    queryset = City.objects.all()
-    serializer_class = CitySerializer
-
-class CityDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = City.objects.all()
-    serializer_class = CitySerializer
-
-
-"""views for department class"""
-class DepartmentList(generics.ListCreateAPIView):
-    queryset = Department.objects.all()
-    serializer_class = DepartmentSerializer
-
-class DepartmentDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Department.objects.all()
-    serializer_class = DepartmentSerializer
-
-
-"""views for activity class"""
-class ActivityList(generics.ListCreateAPIView):
-    queryset = Activity.objects.all()
-    serializer_class = ActivitySerializer
-
-class ActivityDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Activity.objects.all()
-    serializer_class = ActivitySerializer
-
-
-"""views for place_activity class"""
-class Place_aList(generics.ListCreateAPIView):
-    queryset = Place_activity.objects.all()
-    serializer_class = Place_aSerializer
-
-
-class Place_aDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Place_activity.objects.all()
-    serializer_class = Place_aSerializer
-
-
-
-"""views for review"""
-class ReviewList(generics.ListCreateAPIView):
-    queryset = Review.objects.all()
-    serializer_class = ReviewSerializer
-
-class ReviewDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Review.objects.all()
-    serializer_class = ReviewSerializer
-
-
-""""""
