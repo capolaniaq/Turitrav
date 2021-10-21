@@ -1,4 +1,5 @@
 from django.contrib.auth.models import Group
+from rest_framework.views import APIView 
 from django.contrib.auth import get_user_model
 from api.models import *
 from rest_framework import viewsets
@@ -12,8 +13,21 @@ from django.contrib.auth import login,logout,authenticate
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import csrf_protect
+from rest_framework import generics
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.authentication import SessionAuthentication, TokenAuthentication
+from rest_framework.response import Response
+from django.contrib.auth import logout, login, authenticate
+
+
 
 User = get_user_model()
+
+class OwnerList(generics.ListCreateAPIView):
+    queryset = Owner.objects.all()
+    serializer_class = OwnerSerializer
+    permission_classes = (IsAuthenticated,)
+    authentication_class = (TokenAuthentication,)
 
 class UserViewSet(viewsets.ModelViewSet):
     """
@@ -93,9 +107,9 @@ class ReviewViewSet(viewsets.ModelViewSet):
 
 
 class Login(FormView):
-    template_name = "users/login.html"
+    template_name = "login.html"
     form_class = AuthenticationForm
-    success_url = reverse_lazy('api:user_list')
+    success_url = reverse_lazy('api:owner_list')
 
     @method_decorator(csrf_protect)
     @method_decorator(never_cache)
@@ -104,10 +118,15 @@ class Login(FormView):
             return HttpResponseRedirect(self.get_success_url())
         else:
             return super(Login,self).dispatch(request,*args,*kwargs)
-
     def form_valid(self,form):
         user = authenticate(username = form.cleaned_data['username'], password = form.cleaned_data['password'])
         token,_ = Token.objects.get_or_create(user = user)
         if token:
             login(self.request, form.get_user())
             return super(Login,self).form_valid(form)
+
+class Logout(APIView):
+    def get(self,request, format = None):
+        request.user.auth_token.delete()
+        logout(request)
+        return Response(status = status.HTTP_200_OK)

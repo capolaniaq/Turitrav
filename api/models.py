@@ -14,7 +14,7 @@ class Owner(models.Model):
     def __str__(self):
         atributes = self.__dict__
         for key, value in atributes.items():
-            if key is 'id':
+            if key == 'id':
                 return str(value)
         return '1'
 
