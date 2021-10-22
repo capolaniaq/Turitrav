@@ -5,12 +5,12 @@ from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
     is_owner = models.BooleanField(default=False)
-    is_commonuser = models.BooleanField(default=True)
+    is_superuser = models.BooleanField(default=True)
 
 class Owner(models.Model):
     id = models.IntegerField(blank=False, primary_key=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE, unique=True)
-
+    
     def __str__(self):
         atributes = self.__dict__
         for key, value in atributes.items():

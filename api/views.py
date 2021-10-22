@@ -1,8 +1,8 @@
 from django.contrib.auth.models import Group
-from rest_framework.views import APIView 
+from rest_framework.views import APIView
 from django.contrib.auth import get_user_model
 from api.models import *
-from rest_framework import viewsets
+from rest_framework import viewsets, status
 from rest_framework import permissions
 from api.serializers import *
 from django.urls import reverse_lazy
@@ -23,11 +23,6 @@ from django.contrib.auth import logout, login, authenticate
 
 User = get_user_model()
 
-class OwnerList(generics.ListCreateAPIView):
-    queryset = Owner.objects.all()
-    serializer_class = OwnerSerializer
-    permission_classes = (IsAuthenticated,)
-    authentication_class = (TokenAuthentication,)
 
 class UserViewSet(viewsets.ModelViewSet):
     """
@@ -35,7 +30,7 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
 class GroupViewSet(viewsets.ModelViewSet):
@@ -44,7 +39,7 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
 class OwnerViewSet(viewsets.ModelViewSet):
@@ -53,7 +48,7 @@ class OwnerViewSet(viewsets.ModelViewSet):
     """
     queryset = Owner.objects.all()
     serializer_class = OwnerSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
 class PlaceViewSet(viewsets.ModelViewSet):
@@ -62,7 +57,7 @@ class PlaceViewSet(viewsets.ModelViewSet):
     """
     queryset = Place.objects.all()
     serializer_class = PlaceSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
 class DepartmentViewSet(viewsets.ModelViewSet):
@@ -71,7 +66,7 @@ class DepartmentViewSet(viewsets.ModelViewSet):
     """
     queryset = Department.objects.all()
     serializer_class = DepartmentSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 class CityViewSet(viewsets.ModelViewSet):
     """
@@ -79,7 +74,7 @@ class CityViewSet(viewsets.ModelViewSet):
     """
     queryset = City.objects.all()
     serializer_class = CitySerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 class Place_aViewSet(viewsets.ModelViewSet):
     """
@@ -87,7 +82,7 @@ class Place_aViewSet(viewsets.ModelViewSet):
     """
     queryset = Place_activity.objects.all()
     serializer_class = Place_aSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 class ActivityViewSet(viewsets.ModelViewSet):
     """
@@ -95,7 +90,7 @@ class ActivityViewSet(viewsets.ModelViewSet):
     """
     queryset = Activity.objects.all()
     serializer_class = ActivitySerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 class ReviewViewSet(viewsets.ModelViewSet):
     """
@@ -103,13 +98,13 @@ class ReviewViewSet(viewsets.ModelViewSet):
     """
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
 class Login(FormView):
     template_name = "login.html"
     form_class = AuthenticationForm
-    success_url = reverse_lazy('api:owner_list')
+    success_url = reverse_lazy('api-root')
 
     @method_decorator(csrf_protect)
     @method_decorator(never_cache)
@@ -121,9 +116,8 @@ class Login(FormView):
     def form_valid(self,form):
         user = authenticate(username = form.cleaned_data['username'], password = form.cleaned_data['password'])
         token,_ = Token.objects.get_or_create(user = user)
-        if token:
-            login(self.request, form.get_user())
-            return super(Login,self).form_valid(form)
+        login(self.request, form.get_user())
+        return super(Login,self).form_valid(form)
 
 class Logout(APIView):
     def get(self,request, format = None):

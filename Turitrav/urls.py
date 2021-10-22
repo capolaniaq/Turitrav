@@ -33,10 +33,8 @@ router.register(r'reviews', ReviewViewSet)
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('', include(router.urls)),
-    path('api/1.0/',include(('api.urls','api'))),
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('users', UserViewSet, name='user_list'),
     path('login/', Login.as_view(), name='login'),
     path('logout/', Logout.as_view()),
 ]

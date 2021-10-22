@@ -37,7 +37,7 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
 class CitySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = City
-        fields = ['id', 'name']
+        fields = ['id', 'iddepartment', 'name']
 
 
 class Place_aSerializer(serializers.HyperlinkedModelSerializer):
