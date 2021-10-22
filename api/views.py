@@ -120,7 +120,10 @@ class Login(FormView):
         return super(Login,self).form_valid(form)
 
 class Logout(APIView):
-    def get(self,request, format = None):
-        request.user.auth_token.delete()
-        logout(request)
-        return Response(status = status.HTTP_200_OK)
+    def get(self, request, format = None):
+        data = reverse_lazy('api-root')
+        if request.user.is_authenticated:
+            logout(request)
+            return Response(status = status.HTTP_200_OK)
+        else:
+            return HttpResponseRedirect(data)
