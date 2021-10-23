@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
 from api.views import *
+from django.conf import settings
+from django.conf.urls.static import static
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
@@ -25,8 +27,10 @@ router.register(r'owners', OwnerViewSet)
 router.register(r'places', PlaceViewSet)
 router.register(r'departments', DepartmentViewSet)
 router.register(r'cities', CityViewSet)
-router.register(r'place_activies', Place_aViewSet)
+router.register(r'activities', ActivityViewSet)
+router.register(r'place_activies', Place_activityViewSet)
 router.register(r'reviews', ReviewViewSet)
+
 
 
 # Wire up our API using automatic URL routing.
@@ -38,3 +42,5 @@ urlpatterns = [
     path('login/', Login.as_view(), name='login'),
     path('logout/', Logout.as_view()),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

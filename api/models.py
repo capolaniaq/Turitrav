@@ -6,17 +6,18 @@ from django.contrib.auth.models import AbstractUser
 class User(AbstractUser):
     is_owner = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=True)
+    photo = models.ImageField(blank=True, null=True)
+
+    def __str__(self):
+        return self.username
+
 
 class Owner(models.Model):
     id = models.IntegerField(blank=False, primary_key=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE, unique=True)
-    
+
     def __str__(self):
-        atributes = self.__dict__
-        for key, value in atributes.items():
-            if key == 'id':
-                return str(value)
-        return '1'
+        return self.user.username
 
 
 class Department(models.Model):
@@ -34,6 +35,7 @@ class City(models.Model):
     def __str__(self):
         return self.name
 
+
 class Place(models.Model):
     """Place class, inherits of City and Owner"""
     idcity = models.ForeignKey(City, on_delete=models.CASCADE)
@@ -45,12 +47,14 @@ class Place(models.Model):
     def __str__(self):
         return self.name
 
+
 class Activity(models.Model):
-    """Class activity"""
-    tyactivity = models.CharField(max_length=100, blank=False)
+    """department class"""
+    name = models.CharField(max_length=200, blank=False)
 
     def __str__(self):
-        return self.tyactivity
+        return self.name
+
 
 class Place_activity(models.Model):
     """class place_activity"""
@@ -58,7 +62,7 @@ class Place_activity(models.Model):
     idactivity = models.ForeignKey(Activity, on_delete=models.CASCADE)
 
     def __str__(self):
-        return "Place {}: activity {}".format(Place.name, Activity.tyactivity)
+        return "Place {}: activity {}".format(self.idplace.name, self.idactivity.name)
 
 class Review(models.Model):
     """Class Review"""

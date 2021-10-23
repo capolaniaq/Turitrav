@@ -20,7 +20,6 @@ from rest_framework.response import Response
 from django.contrib.auth import logout, login, authenticate
 
 
-
 User = get_user_model()
 
 
@@ -76,13 +75,6 @@ class CityViewSet(viewsets.ModelViewSet):
     serializer_class = CitySerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
-class Place_aViewSet(viewsets.ModelViewSet):
-    """
-        API endpoint that allows groups to be viewed or edited.
-    """
-    queryset = Place_activity.objects.all()
-    serializer_class = Place_aSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 class ActivityViewSet(viewsets.ModelViewSet):
     """
@@ -91,6 +83,16 @@ class ActivityViewSet(viewsets.ModelViewSet):
     queryset = Activity.objects.all()
     serializer_class = ActivitySerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+
+class Place_activityViewSet(viewsets.ModelViewSet):
+    """
+        API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Place_activity.objects.all()
+    serializer_class = Place_activitySerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
 
 class ReviewViewSet(viewsets.ModelViewSet):
     """
