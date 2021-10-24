@@ -1,0 +1,66 @@
+[
+    {
+        "nombre": "Cafe o Tinto",
+        "img": "/imgs/gastro/0.png"
+    },
+    {
+        "nombre": "Arepas",
+        "img": "/imgs/gastro/1.png"
+    },
+    {
+        "nombre": "Bandeja Paisa",
+        "img": "/imgs/gastro/15.png"
+    },
+    {
+        "nombre": "Empanadas",
+        "img": "/imgs/gastro/3.png"
+    },
+    {
+        "nombre": "Merengon",
+        "img": "/imgs/gastro/4.png"
+    },
+    {
+        "nombre": "Almojabanas",
+        "img": "/imgs/gastro/5.png"
+    },
+    {
+        "nombre": "Sancocho",
+        "img": "/imgs/gastro/6.png"
+    },
+    {
+        "nombre": "Tamal",
+        "img": "/imgs/gastro/7.png"
+    },
+    {
+        "nombre": "Picada",
+        "img": "/imgs/gastro/8.png"
+    },
+    {
+        "nombre": "Arepa de Chocolo",
+        "img": "/imgs/gastro/9.png"
+    },
+    {
+        "nombre": "Bocadillo Veleño",
+        "img": "/imgs/gastro/10.png"
+    },
+    {
+        "nombre": "Bocadillo con queso",
+        "img": "/imgs/gastro/11.png"
+    },
+    {
+        "nombre": "Lechona",
+        "img": "/imgs/gastro/12.png"
+    },
+    {
+        "nombre": "Changua",
+        "img": "/imgs/gastro/13.png"
+    },
+    {
+        "nombre": "Agua de panela",
+        "img": "/imgs/gastro/14.png"
+    },
+    {
+        "nombre": "Arroz atollado",
+        "img": "/imgs/gastro/2.png"
+    }
+]

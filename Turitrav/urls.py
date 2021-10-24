@@ -19,6 +19,8 @@ from rest_framework import routers
 from api.views import *
 from django.conf import settings
 from django.conf.urls.static import static
+from frontend.views import *
+
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)

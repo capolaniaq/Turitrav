@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Quindio",
+        "img": "/imgs/cultura/8.png"
+    },
+    {
+        "nombre": "Antioquia",
+        "img": "/imgs/cultura/2.png"
+    },
+    {
+        "nombre": "Tolima",
+        "img": "/imgs/cultura/3.png"
+    },
+    {
+        "nombre": "Huila",
+        "img": "/imgs/cultura/4.png"
+    },
+    {
+        "nombre": "Boyaca",
+        "img": "/imgs/cultura/5.png"
+    },
+    {
+        "nombre": "Santander",
+        "img": "/imgs/cultura/6.png"
+    },
+    {
+        "nombre": "Risaralda",
+        "img": "/imgs/cultura/7.png"
+    },
+    {
+        "nombre": "Cundinamarca",
+        "img": "/imgs/cultura/1.png"
+    }
+]

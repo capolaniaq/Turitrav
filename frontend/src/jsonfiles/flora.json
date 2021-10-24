@@ -1,0 +1,50 @@
+[
+    {
+        "nombre": "Arbol colorado",
+        "img": "/imgs/flora/1.png"
+    },
+    {
+        "nombre": "Palma de Cera",
+        "img": "/imgs/flora/10.png"
+    },
+    {
+        "nombre": "Flor Andina",
+        "img": "/imgs/flora/3.png"
+    },
+    {
+        "nombre": "Flor Buchon",
+        "img": "/imgs/flora/4.png"
+    },
+    {
+        "nombre": "Orquidea",
+        "img": "/imgs/flora/12.png"
+    },
+    {
+        "nombre": "Flor Retamo",
+        "img": "/imgs/flora/6.png"
+    },
+    {
+        "nombre": "Frailejon",
+        "img": "/imgs/flora/7.png"
+    },
+    {
+        "nombre": "Helecho",
+        "img": "/imgs/flora/8.png"
+    },
+    {
+        "nombre": "Ocobo",
+        "img": "/imgs/flora/9.png"
+    },
+    {
+        "nombre": "Eucalipto",
+        "img": "/imgs/flora/2.png"
+    },
+    {
+        "nombre": "Roble Colombiano",
+        "img": "/imgs/flora/11.png"
+    },
+    {
+        "nombre": "Flor de Cafe",
+        "img": "/imgs/flora/5.png"
+    }
+]

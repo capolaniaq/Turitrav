@@ -38,11 +38,15 @@ class City(models.Model):
 
 class Place(models.Model):
     """Place class, inherits of City and Owner"""
-    idcity = models.ForeignKey(City, on_delete=models.CASCADE)
+    dpto = models.CharField(max_length=200, blank=False)
+    muni = models.ForeignKey(City, on_delete=models.CASCADE)
     idowner = models.ForeignKey(Owner, on_delete=models.CASCADE, serialize=True)
-    name = models.CharField(max_length=200, blank=False)
+    lugar = models.CharField(max_length=200, blank=False)
     description = models.TextField(max_length=500, blank=False)
     create = models.DateTimeField(auto_now_add=True)
+    calificacion = models.FloatField(default=0.0)
+    img = models.ImageField(blank=True, null=True)
+    categoria = models.CharField(max_length=100, blank=False)
 
     def __str__(self):
         return self.name

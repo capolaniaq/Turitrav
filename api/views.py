@@ -1,23 +1,17 @@
 from django.contrib.auth.models import Group
 from rest_framework.views import APIView
-from django.contrib.auth import get_user_model
+from django.contrib.auth import get_user_model, logout, login, authenticate
 from api.models import *
-from rest_framework import viewsets, status
-from rest_framework import permissions
+from rest_framework import viewsets, status, permissions
 from api.serializers import *
 from django.urls import reverse_lazy
 from django.views.generic.edit import FormView
 from django.http import HttpResponseRedirect
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth import login,logout,authenticate
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import csrf_protect
-from rest_framework import generics
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.authentication import SessionAuthentication, TokenAuthentication
 from rest_framework.response import Response
-from django.contrib.auth import logout, login, authenticate
 
 
 User = get_user_model()

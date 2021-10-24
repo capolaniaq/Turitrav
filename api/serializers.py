@@ -18,31 +18,31 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         model = Group
         fields = ['url', 'name']
 
-class OwnerSerializer(serializers.HyperlinkedModelSerializer):
+class OwnerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Owner
         fields = ['id', 'user']
 
 
-class PlaceSerializer(serializers.HyperlinkedModelSerializer):
+class PlaceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Place
-        fields = ['id', 'idowner', 'idcity', 'description', 'name']
+        fields = '__all__'
 
 
-class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
+class DepartmentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Department
         fields = ['id', 'name']
 
 
-class CitySerializer(serializers.HyperlinkedModelSerializer):
+class CitySerializer(serializers.ModelSerializer):
     class Meta:
         model = City
         fields = ['id', 'iddepartment', 'name']
 
 
-class ActivitySerializer(serializers.HyperlinkedModelSerializer):
+class ActivitySerializer(serializers.ModelSerializer):
     class Meta:
         model = Activity
         fields = ['id', 'name']

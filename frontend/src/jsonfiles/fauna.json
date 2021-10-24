@@ -1,0 +1,82 @@
+[
+    {
+        "nombre": "Oso de Anteojos",
+        "img": "/imgs/fauna/1.png"
+    },
+    {
+        "nombre": "Guacamaya",
+        "img": "/imgs/fauna/2.png"
+    },
+    {
+        "nombre": "Condor",
+        "img": "/imgs/fauna/3.png"
+    },
+    {
+        "nombre": "Gallito de roca",
+        "img": "/imgs/fauna/4.png"
+    },
+    {
+        "nombre": "Loro Orejiamarillo",
+        "img": "/imgs/fauna/5.png"
+    },
+    {
+        "nombre": "Mariposa Monarca",
+        "img": "/imgs/fauna/6.png"
+    },
+    {
+        "nombre": "Jaguar",
+        "img": "/imgs/fauna/7.png"
+    },
+    {
+        "nombre": "Guatin",
+        "img": "/imgs/fauna/8.png"
+    },
+    {
+        "nombre": "Mariposa Transparente",
+        "img": "/imgs/fauna/9.png"
+    },
+    {
+        "nombre": "Mono lanudo",
+        "img": "/imgs/fauna/10.png"
+    },
+    {
+        "nombre": "Mono araña marron",
+        "img": "/imgs/fauna/11.png"
+    },
+    {
+        "nombre": "Perezoso de tres dedos",
+        "img": "/imgs/fauna/13.png"
+    },
+    {
+        "nombre": "Loro de anteojos",
+        "img": "/imgs/fauna/14.png"
+    },
+    {
+        "nombre": "Pudú del norte",
+        "img": "/imgs/fauna/15.png"
+    },
+    {
+        "nombre": "Zorro colorado",
+        "img": "/imgs/fauna/16.png"
+    },
+    {
+        "nombre": "Tapir andino",
+        "img": "/imgs/fauna/17.png"
+    },
+    {
+        "nombre": "Rana toro",
+        "img": "/imgs/fauna/18.png"
+    },
+    {
+        "nombre": "Colibri angel",
+        "img": "/imgs/fauna/19.png"
+    },
+    {
+        "nombre": "Aguila andina",
+        "img": "/imgs/fauna/20.png"
+    },
+    {
+        "nombre": "Paujil",
+        "img": "/imgs/fauna/12.png"
+    }
+]
