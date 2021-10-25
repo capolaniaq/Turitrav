@@ -1,13 +1,15 @@
 import React from "react";
-import tolimaJson from '../jsonfiles/tolima.json'
 import MainHeader from "./headertt";
 import ModulePlaces from "./moduleplaces";
 
 
 function Tolima() {
 
-    let lugares = tolimaJson
-
+  let lugares;
+  fetch('http://localhost:8000/place_activies.json', {
+    method: 'GET',
+    body: JSON.stringify(lugares),
+  })
 
     return (
         <div>

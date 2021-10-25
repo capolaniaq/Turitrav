@@ -1,8 +1,8 @@
+""" Admin module, select the models to use """
 from django.contrib import admin
 from api.models import (User, Owner, City, Department, Place, Place_activity, Activity, Review)
 from django.contrib.auth.admin import UserAdmin
 
-""" we select the models we want to use """
 
 admin.site.register(User, UserAdmin)
 admin.site.register(Owner)
