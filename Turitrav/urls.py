@@ -21,6 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from frontend.views import *
 
+# Records to easily move through urls
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
@@ -37,6 +38,7 @@ router.register(r'reviews', ReviewViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
+# Urls to handle the data
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
