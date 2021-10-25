@@ -5,7 +5,6 @@ from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
     is_owner = models.BooleanField(default=False)
-    is_superuser = models.BooleanField(default=True)
     photo = models.ImageField(blank=True, null=True)
 
     def __str__(self):
@@ -13,7 +12,6 @@ class User(AbstractUser):
 
 
 class Owner(models.Model):
-    id = models.IntegerField(blank=False, primary_key=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE, unique=True)
 
     def __str__(self):
@@ -42,7 +40,6 @@ class Place(models.Model):
     idowner = models.ForeignKey(Owner, on_delete=models.CASCADE, serialize=True)
     lugar = models.CharField(max_length=200, blank=False)
     description = models.TextField(max_length=500, blank=False)
-    create = models.DateTimeField(auto_now_add=True)
     calificacion = models.FloatField(default=0.0)
 
     def __str__(self):
