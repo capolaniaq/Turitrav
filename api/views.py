@@ -44,14 +44,6 @@ class OwnerViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
-class PlaceViewSet(viewsets.ModelViewSet):
-    """
-        API endpoint that allows groups to be viewed or edited.
-    """
-    queryset = Place.objects.all()
-    serializer_class = PlaceSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-
 
 class DepartmentViewSet(viewsets.ModelViewSet):
     """
@@ -67,6 +59,15 @@ class CityViewSet(viewsets.ModelViewSet):
     """
     queryset = City.objects.all()
     serializer_class = CitySerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+
+class PlaceViewSet(viewsets.ModelViewSet):
+    """
+        API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Place.objects.all()
+    serializer_class = PlaceSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 

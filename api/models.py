@@ -38,18 +38,15 @@ class City(models.Model):
 
 class Place(models.Model):
     """Place class, inherits of City and Owner"""
-    dpto = models.CharField(max_length=200, blank=False)
     muni = models.ForeignKey(City, on_delete=models.CASCADE)
     idowner = models.ForeignKey(Owner, on_delete=models.CASCADE, serialize=True)
     lugar = models.CharField(max_length=200, blank=False)
     description = models.TextField(max_length=500, blank=False)
     create = models.DateTimeField(auto_now_add=True)
     calificacion = models.FloatField(default=0.0)
-    img = models.ImageField(blank=True, null=True)
-    categoria = models.CharField(max_length=100, blank=False)
 
     def __str__(self):
-        return self.name
+        return self.lugar
 
 
 class Activity(models.Model):
@@ -64,9 +61,11 @@ class Place_activity(models.Model):
     """class place_activity"""
     idplace = models.ForeignKey(Place, on_delete=models.CASCADE)
     idactivity = models.ForeignKey(Activity, on_delete=models.CASCADE)
+    img = models.ImageField(blank=True, null=True)
+    img2 = models.ImageField(blank=True, null=True)
 
     def __str__(self):
-        return "Place {}: activity {}".format(self.idplace.name, self.idactivity.name)
+        return "Place {}: activity {}".format(self.idplace.lugar, self.idactivity.name)
 
 class Review(models.Model):
     """Class Review"""
