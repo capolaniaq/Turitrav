@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Finca Bella Vista",
+        "lugar": "Doima",
+        "ciudad": "La Mesa",
+        "precio": "$ 100.000",
+        "img": "/imgs/hospedaje/cundinamarca/4.png",
+        "contacto": "+57 317 000 00 00"
+    },
+    {
+        "nombre": "Finca Villa Restrepo",
+        "lugar": "Alto de las Flores",
+        "ciudad": "La Mesa",
+        "precio": "$ 80.000",
+        "img": "/imgs/hospedaje/cundinamarca/1.png",
+        "contacto": "+57 317 111 11 11"
+    },
+    {
+        "nombre": "Hostal Altagracia",
+        "lugar": "Alto del Aguila",
+        "ciudad": "Zipaquira",
+        "precio": "$ 90.000",
+        "img": "/imgs/hospedaje/cundinamarca/3.png",
+        "contacto": "+57 317 222 22 22"
+    },
+    {
+        "nombre": "Hotel Monserrat",
+        "lugar": "Barroblanco",
+        "ciudad": "Zipaquira",
+        "precio": "$ 70.000",
+        "img": "/imgs/hospedaje/cundinamarca/2.png",
+        "contacto": "+57 317 999 99 99"
+    }
+]

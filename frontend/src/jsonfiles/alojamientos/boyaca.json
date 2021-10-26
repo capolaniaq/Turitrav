@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Finca las Nieves",
+        "lugar": "Tras del Alto",
+        "ciudad": "Tunja",
+        "precio": "$ 100.000",
+        "img": "/imgs/hospedaje/boyaca/1.png",
+        "contacto": "+57 317 000 00 00"
+    },
+    {
+        "nombre": "Finca los Robles",
+        "lugar": "Pirgua",
+        "ciudad": "Tunja",
+        "precio": "$ 80.000",
+        "img": "/imgs/hospedaje/boyaca/4.png",
+        "contacto": "+57 317 111 11 11"
+    },
+    {
+        "nombre": "Hostal Las Brujas",
+        "lugar": "Tinjaca",
+        "ciudad": "Raquira",
+        "precio": "$ 90.000",
+        "img": "/imgs/hospedaje/boyaca/3.png",
+        "contacto": "+57 317 222 22 22"
+    },
+    {
+        "nombre": "Hotel el Alfarero ",
+        "lugar": "Alto brujas",
+        "ciudad": "Raquira",
+        "precio": "$ 70.000",
+        "img": "/imgs/hospedaje/boyaca/2.png",
+        "contacto": "+57 317 999 99 99"
+    }
+]

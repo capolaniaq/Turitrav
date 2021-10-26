@@ -40,7 +40,7 @@ function FormNewUser() {
                     <div className="subcontainer">
                         <div className="fatherformnewuser">
                             <div className="sonform">
-                                <h2>Formulario de Registro</h2>
+                                <h2><b>Formulario de Registro</b></h2>
                             </div>
 
                             <div className="sonform">

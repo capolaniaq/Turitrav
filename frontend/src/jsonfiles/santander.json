@@ -1,0 +1,47 @@
+[
+    {   "dpto": "Santander",
+        "muni": "Gámbita",
+        "lugar": "Cascada el manto de la virgen",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/santander/1.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Es una bella caída de agua ubicada a 10 kilómetros de Gámbita. Su exuberante belleza ha llamado la atención de turistas de todo el mundo, tanto que ahora es catalogada como uno de los lugares que hay que visitar en Colombia"
+    },
+    {   "dpto": "Santander",
+        "muni": "Florián",
+        "lugar": "Las ventanas de Tisquizoque",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/santander/2.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Es un sitio turístico por excelencia desde donde se puede observar una encantadora panorámica del municipio. Esta cueva natural recibe el nombre de Ventanas de Tizquizoque porque se pueden atravesar de lado a lado."
+    },
+    {   "dpto": "Santander",
+        "muni": "San Vicente de Chucurí",
+        "lugar": "Las piscinas naturales",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/santander/3.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "En esta finca quizá no hay muchas actividades por hacer, más que disfrutar del contacto con la naturaleza y refrescarse en las piscinas de agua natural que ofrece el sitio, respirar aire puro y desconectarse del estrés y día a día de la ciudad."
+    },
+    {   "dpto": "Santander",
+        "muni": "Mogotes",
+        "lugar": "El hoyo de los pájaros",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/santander/4.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Este enigmático paraje mogotano alcanza una profundidad de 98 metros y diámetro de 30. El hoyo de los pájaros es casi que un capricho de la naturaleza que se convirtió en un caverna que alberga en el fondo legendarios y gigantes nidos de los ruidosos pájaros guácharos y aves suramericanas de unos 30 centímetros de largo."
+    },
+    {   "dpto": "Santander",
+        "muni": "El Playón",
+        "lugar": "Salto de la India",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/santander/5.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Es un alto de dos caídas y aguas frías que le permite fortalecer hábitos de vida saludable, tener contacto con los lugareños y conocer un poco más del departamento."
+    }
+]

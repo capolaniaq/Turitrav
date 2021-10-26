@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Finca la Rivera",
+        "lugar": "Juntas",
+        "ciudad": "Ibagué",
+        "precio": "$ 100.000",
+        "img": "/imgs/hospedaje/tolima/5.png",
+        "contacto": "+57 317 000 00 00"
+    },
+    {
+        "nombre": "Finca los Robles",
+        "lugar": "Villa Restrepo",
+        "ciudad": "Ibagué",
+        "precio": "$ 80.000",
+        "img": "/imgs/hospedaje/tolima/4.png",
+        "contacto": "+57 317 111 11 11"
+    },
+    {
+        "nombre": "Hostal Primavera",
+        "lugar": "Pastales",
+        "ciudad": "Ibagué",
+        "precio": "$ 90.000",
+        "img": "/imgs/hospedaje/tolima/3.png",
+        "contacto": "+57 317 222 22 22"
+    },
+    {
+        "nombre": "Hotel las Orquideas ",
+        "lugar": "Villa Restrepo",
+        "ciudad": "Ibagué",
+        "precio": "$ 70.000",
+        "img": "/imgs/hospedaje/tolima/2.png",
+        "contacto": "+57 317 999 99 99"
+    }
+]

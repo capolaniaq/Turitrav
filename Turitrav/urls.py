@@ -33,6 +33,7 @@ router.register(r'cities', CityViewSet)
 router.register(r'activities', ActivityViewSet)
 router.register(r'place_activies', Place_activityViewSet)
 router.register(r'reviews', ReviewViewSet)
+router.register(r'hostels', HostelViewSet)
 
 
 

@@ -1,0 +1,47 @@
+[
+    {   "dpto": "Antioquia",
+        "muni": "Jardin",
+        "lugar": "La Cueva del Esplendor",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/antioquia/1.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "La Cueva del Esplendor esta ubicada en lo mas alto de una de las montañas que rodean el pueblo, en el sector conocido como el Alto de Las Flores; para llegar hasta alli, tenemos tres opciones, una es tomar un Jeep desde la terminal del pueblo hasta cierto punto de la montaña, y se debe continuar a pie."
+    },
+    {   "dpto": "Antioquia",
+        "muni": "Jardin",
+        "lugar": "Charco Corazon - Cascada del Amor",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/antioquia/2.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Cascada del Amor es un sendero de ida y vuelta de 4.2 kilómetros localizado cerca de Jardín, Antioquia, Colombia. Tiene una cascada y es bueno para todos los niveles de habilidad. El sendero ofrece una serie de opciones de actividades."
+    },
+    {   "dpto": "Antioquia",
+        "muni": "Jardin",
+        "lugar": "Cascada Escalera de Cristal",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/antioquia/3.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Las caídas de agua de Jardín Antioquia son de las más espectaculares que hay en el mundo. ¡Sobre todo la caída La Escalera! Esta tiene una altura mayor a los 60 metros y se puede dividir en dos etapas."
+    },
+    {   "dpto": "Antioquia",
+        "muni": "Andes",
+        "lugar": "Chorros de Taparto",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/antioquia/4.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Chorros De Tapartó es un sendero de ida y vuelta de 13.5 kilómetros localizado cerca de Andes, Antioquia, Colombia. Tiene una cascada y es calificado como moderado. El sendero se usa principalmente para hacer senderismo y viajes por la naturaleza."
+    },
+    {   "dpto": "Antioquia",
+        "muni": "Jardin",
+        "lugar": "La Cueva de los Guacharos",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/antioquia/5.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Se encuentra en la parte alta de la quebrada La Salada en la vereda del mismo nombre a cinco kilómetros de la cabecera municipal. Se trata de una cascada que cae entre las montañas que se levantan alrededor de una cueva, donde habitan los Guácharos."
+    }
+]

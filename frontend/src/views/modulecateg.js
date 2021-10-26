@@ -1,4 +1,3 @@
-
 function Category(props) {
 
     return (
@@ -6,7 +5,7 @@ function Category(props) {
         <div className="col-animal">
             <div>
                 <div>
-                    <img className="img-animal" src={props.img} alt="cocuy" />
+                    <img className="img-animal" src={props.img} alt="" />
                 </div>
                 <div className="card-body">
                     <h3 className="descrip-animal"><b>{props.nombre}</b></h3>

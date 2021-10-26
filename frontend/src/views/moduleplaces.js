@@ -35,7 +35,7 @@ function ModulePlaces(props) {
                     </div>
                     <div className="sonsonmodule">
                         <div className="star">
-                        <div className="colstar">
+                            <div className="colstar">
                                 <img src="/imgs/icons/corazon.png" width="25px" />
                             </div>
                             <div className="colstar">

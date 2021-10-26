@@ -44,7 +44,7 @@ class CitySerializer(serializers.ModelSerializer):
         model = City
         fields = ['id', 'name', 'department']
 
-    
+
     def get_department(self, obj):
         """ data from other models that we are going to handle """
         return obj.iddepartment.name
@@ -84,9 +84,7 @@ class Place_activitySerializer(serializers.ModelSerializer):
     categoria = serializers.SerializerMethodField()
     class Meta:
         model = Place_activity
-        fields = ['id', 'department', 'muni', 'lugar', 'description', 'calificacion', 'categoria', 'img', 'img2']
-
-    
+        fields = ['id', 'idplace', 'idactivity', 'department', 'muni', 'lugar', 'description', 'calificacion', 'categoria', 'img', 'img2']
 
     def get_department(self, obj):
         """ Function for get department by place_activity"""
@@ -118,5 +116,32 @@ class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
         fields = '__all__'
+
+class HostelSerializer(serializers.ModelSerializer):
+    """Sereliazer for Hostels"""
+    contact_number = serializers.SerializerMethodField()
+    place = serializers.SerializerMethodField()
+    department = serializers.SerializerMethodField()
+    city = serializers.SerializerMethodField()
+    class Meta:
+        model = Hostel
+        fields = ['id', 'name', 'place', 'department', 'city', 'contact_number', 'img', 'price', 'idplace', 'idowner']
+
+    def get_contact_number(self, obj):
+        """Function that get the contanct_number by hostel owner"""
+        return obj.idowner.contact_number
+
+    def get_place(self, obj):
+        """Function that get place for hostels"""
+        return obj.idplace.lugar
+
+    def get_department(self, obj):
+        """Function that get department for hostels"""
+        return obj.idplace.muni.iddepartment.name
+
+    def get_city(self, obj):
+        """Function that get city for hostels"""
+        return obj.idplace.muni.name
+
 
 

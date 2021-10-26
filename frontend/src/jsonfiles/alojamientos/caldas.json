@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Finca Filadelfia",
+        "lugar": "Filadelfia",
+        "ciudad": "Caldas",
+        "precio": "$ 100.000",
+        "img": "/imgs/hospedaje/caldas/1.png",
+        "contacto": "+57 317 000 00 00"
+    },
+    {
+        "nombre": "Hotel Doña Mercedes",
+        "lugar": "La Merced",
+        "ciudad": "Caldas",
+        "precio": "$ 80.000",
+        "img": "/imgs/hospedaje/caldas/4.png",
+        "contacto": "+57 317 111 11 11"
+    },
+    {
+        "nombre": "Hostal Los Naranjos",
+        "lugar": "Rio Sucio",
+        "ciudad": "Caldas",
+        "precio": "$ 90.000",
+        "img": "/imgs/hospedaje/caldas/3.png",
+        "contacto": "+57 317 222 22 22"
+    },
+    {
+        "nombre": "Hotel los Nevados ",
+        "lugar": "Marmato",
+        "ciudad": "Caldas",
+        "precio": "$ 70.000",
+        "img": "/imgs/hospedaje/caldas/2.png",
+        "contacto": "+57 317 999 99 99"
+    }
+]

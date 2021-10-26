@@ -1,6 +1,7 @@
 """models module"""
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.db.models.aggregates import Max
 
 
 class User(AbstractUser):
@@ -15,6 +16,7 @@ class User(AbstractUser):
 class Owner(models.Model):
     """ Owner model inheriting from User """
     user = models.OneToOneField(User, on_delete=models.CASCADE, unique=True)
+    contact_number = models.CharField(max_length=20, blank=True, null=True)
 
     def __str__(self):
         return self.user.username
@@ -37,7 +39,6 @@ class City(models.Model):
         return self.name
 
 
-
 class Place(models.Model):
     """ Model to manage  places """
     muni = models.ForeignKey(City, on_delete=models.CASCADE)
@@ -48,7 +49,6 @@ class Place(models.Model):
 
     def __str__(self):
         return self.lugar
-
 
 
 class Activity(models.Model):
@@ -75,3 +75,17 @@ class Review(models.Model):
     idplace_activity = models.ForeignKey(Place_activity, on_delete=models.CASCADE)
     iduser = models.ForeignKey(User, on_delete=models.CASCADE)
     review = models.TextField(max_length=500, blank=False)
+
+
+class Hostel(models.Model):
+    """ Model to manage hostels """
+    name = models.CharField(max_length=100, blank=False)
+    price = models.CharField(max_length=100, blank=False)
+    idplace = models.ForeignKey(Place, on_delete=models.CASCADE)
+    img = models.ImageField(blank=True, null=True)
+    idowner = models.ForeignKey(Owner, on_delete=models.CASCADE)
+
+    def __str__(self):
+        """print information about hostel"""
+        return 'Hostel: {}, by {} on {}'.format(self.name, self.idowner.username, self.idplace.lugar)
+

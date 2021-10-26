@@ -1,0 +1,53 @@
+[
+    {
+        "nombre": "Antioquia",
+        "img": "/imgs/hospedaje/1.png",
+        "url": "/hantioquia"
+    },
+    {
+        "nombre": "Boyaca",
+        "img": "/imgs/hospedaje/2.png",
+        "url": "/hboyaca"
+    },
+    {
+        "nombre": "Caldas",
+        "img": "/imgs/hospedaje/3.png",
+        "url": "/hcaldas"
+        
+    },
+    {
+        "nombre": "Cundinamarca",
+        "img": "/imgs/hospedaje/4.png",
+        "url": "/hcundinamarca"
+    },
+    {
+        "nombre": "Huila",
+        "img": "/imgs/hospedaje/5.png",
+        "url": "/hhuila"
+    },
+    {
+        "nombre": "Norte de Santander",
+        "img": "/imgs/hospedaje/6.png",
+        "url": "/hnortesantander"
+    },
+    {
+        "nombre": "Quindio",
+        "img": "/imgs/hospedaje/7.png",
+        "url": "/hquindio"
+    },
+    {
+        "nombre": "Risaralda",
+        "img": "/imgs/hospedaje/8.png",
+        "url": "/hrisaralda"
+    },
+    {
+        "nombre": "Santander",
+        "img": "/imgs/hospedaje/9.png",
+        "url": "/hsantander"
+    },
+    {
+        "nombre": "Tolima",
+        "img": "/imgs/hospedaje/10.png",
+        "url": "/htolima"
+    }
+]

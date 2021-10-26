@@ -81,6 +81,13 @@ class ReviewViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
+class HostelViewSet(viewsets.ModelViewSet):
+    """class to handle reviews logic"""
+    queryset = Hostel.objects.all()
+    serializer_class = HostelSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+
 class Login(FormView):
     """ Class to manage the login of a user """
     template_name = "login.html"

@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Hostal los Paisitas",
+        "lugar": "Altavista",
+        "ciudad": "Medellin",
+        "precio": "$ 100.000",
+        "img": "/imgs/hospedaje/antioquia/1.png",
+        "contacto": "+57 317 000 00 00"
+    },
+    {
+        "nombre": "Finca Campo Alegre",
+        "lugar": "San Cristobal",
+        "ciudad": "Medellin",
+        "precio": "$ 80.000",
+        "img": "/imgs/hospedaje/antioquia/4.png",
+        "contacto": "+57 317 111 11 11"
+    },
+    {
+        "nombre": "Hostal Azul",
+        "lugar": "Santa Helena",
+        "ciudad": "Medellin",
+        "precio": "$ 90.000",
+        "img": "/imgs/hospedaje/antioquia/3.png",
+        "contacto": "+57 317 222 22 22"
+    },
+    {
+        "nombre": "Hotel Camelias",
+        "lugar": "San Antonio de Prado",
+        "ciudad": "Medellin",
+        "precio": "$ 70.000",
+        "img": "/imgs/hospedaje/antioquia/2.png",
+        "contacto": "+57 317 999 99 99"
+    }
+]

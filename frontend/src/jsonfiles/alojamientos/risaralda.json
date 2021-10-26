@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Finca Villa Maria",
+        "lugar": "Combia Alta",
+        "ciudad": "Pereira",
+        "precio": "$ 100.000",
+        "img": "/imgs/hospedaje/risaralda/1.png",
+        "contacto": "+57 317 000 00 00"
+    },
+    {
+        "nombre": "Hostal los Robles",
+        "lugar": "Morelia",
+        "ciudad": "Pereira",
+        "precio": "$ 80.000",
+        "img": "/imgs/hospedaje/risaralda/4.png",
+        "contacto": "+57 317 111 11 11"
+    },
+    {
+        "nombre": "Hotel Azulejo",
+        "lugar": "Morelia",
+        "ciudad": "Pereira",
+        "precio": "$ 90.000",
+        "img": "/imgs/hospedaje/risaralda/3.png",
+        "contacto": "+57 317 222 22 22"
+    },
+    {
+        "nombre": "Hotel Rosa ",
+        "lugar": "Combia",
+        "ciudad": "Pereira",
+        "precio": "$ 70.000",
+        "img": "/imgs/hospedaje/risaralda/2.png",
+        "contacto": "+57 317 999 99 99"
+    }
+]

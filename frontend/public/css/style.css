@@ -62,7 +62,7 @@ body{
       flex-direction: column;
   }
 
-.header .navbar {
+.header .navbar{
     background-color: transparent !important;
   }
 
@@ -242,12 +242,93 @@ ion-icon{
     justify-content: center;
     margin: 2%;
 }
-.col{
-    
-}
+
 .col-7{
     border-left: 5px rgb(174, 175, 175) solid;
 }
-.descrplace{
 
+.textohospedador{
+    padding: 10% 10% 0% 10%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 300%;
+    color: white;
+}
+.clickhospedador{
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    border: black 2px solid;
+    font-family: 'Poppins', sans-serif;
+    background-color: turquoise;
+}
+.hospedador{
+    background-color: black;
+}
+
+.header2 .navbar2{
+    background-color: rgb(238, 238, 238);
+    justify-content: center;
+    text-align: center;
+}
+
+.logohospedador{
+    margin: 1%;
+}
+
+/* CSS ALOJAMIENTO */
+
+.fatherhos{
+    display: flex;
+    border: 2px rgb(201, 199, 199) solid;
+    margin-top: 20px;
+    border-radius: 15px;
+
+}
+.sonhos{
+margin: 2% 0% 2% 3%;
+padding: 0%;
+font-family: 'Poppins', sans-serif;
+text-align: left;
+
+}
+.imghospedaje{
+    border-radius: 5%;
+    width: 230px;
+}
+.iconHos{
+    width: 25px;
+    margin: 0px 20px 0px 0px;
+}
+.iconHos1{
+    width: 25px;
+    margin-right: 10px;
+}
+.sobra{
+    background-color: rgb(30, 30, 79);
+}
+
+.lodgment{
+    margin: 10px;
+    border: solid 3px #a5a5a5;
+    border-radius: 15px;
+}
+.cont3{
+    margin-top: 50px;
+    justify-content: center;
+}
+.row-hos{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: left;
+    display: flex;
+}
+
+/* .row-lodgment{
+    margin: 10px;
+} */
+
+.sonlodgment{
+    margin: 10px;
 }

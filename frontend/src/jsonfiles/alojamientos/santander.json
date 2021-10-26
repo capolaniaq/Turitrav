@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Finca la Hormiga",
+        "lugar": "Chitota",
+        "ciudad": "Bucaramanga",
+        "precio": "$ 100.000",
+        "img": "/imgs/hospedaje/santander/1.png",
+        "contacto": "+57 317 000 00 00"
+    },
+    {
+        "nombre": "Hostal Dulima",
+        "lugar": "Granada",
+        "ciudad": "Bucaramanga",
+        "precio": "$ 80.000",
+        "img": "/imgs/hospedaje/santander/4.png",
+        "contacto": "+57 317 111 11 11"
+    },
+    {
+        "nombre": "Hotel Suizo",
+        "lugar": "Tiendepalo",
+        "ciudad": "Bucaramanga",
+        "precio": "$ 90.000",
+        "img": "/imgs/hospedaje/santander/3.png",
+        "contacto": "+57 317 222 22 22"
+    },
+    {
+        "nombre": "Hotel Morenita ",
+        "lugar": "Gaitan",
+        "ciudad": "Bucaramanga",
+        "precio": "$ 70.000",
+        "img": "/imgs/hospedaje/santander/2.png",
+        "contacto": "+57 317 999 99 99"
+    }
+]

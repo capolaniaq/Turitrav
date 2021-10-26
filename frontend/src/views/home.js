@@ -38,7 +38,7 @@ function PageWrapper() {
                     Categorias
                   </a>
                   <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a className="dropdown-item" href="/alojamiento"><img className="iconuser" src="imgs/icons/cabana.png" /> Alojamiento</a></li>
+                    <li><a className="dropdown-item" href="/hotels"><img className="iconuser" src="imgs/icons/cabana.png" /> Alojamiento</a></li>
                     <li><a className="dropdown-item" href="/senderismo"><img className="iconuser" src="imgs/icons/adventurer.png" />Senderismo</a></li>
                     <li><a className="dropdown-item" href="/montana"><img className="iconuser" src="imgs/icons/mountain.png" />Montaña</a></li>
                     <li><a className="dropdown-item" href="/flora"><img className="iconuser" src="imgs/icons/leaves.png" />Flora</a></li>
@@ -85,6 +85,7 @@ function PageWrapper() {
         <img src="imgs/places/2.png" />
 
       </div>
+
       <div>
         <img className="banner0" src="imgs/banner0.png" />
       </div>
@@ -140,7 +141,7 @@ function PageWrapper() {
       </div>
 
       <div>
-        <img className="banner0" src="imgs/bannerpost.png" />
+        <a href="alojador"> <img className="banner0" src="imgs/bannerpost.png" /></a>
       </div>
 
       <div className="cont2">

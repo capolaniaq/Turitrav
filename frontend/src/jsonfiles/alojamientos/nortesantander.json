@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Finca Villa Andrea",
+        "lugar": "Agua Clara",
+        "ciudad": "Cucuta",
+        "precio": "$ 100.000",
+        "img": "/imgs/hospedaje/nortesantander/1.png",
+        "contacto": "+57 317 000 00 00"
+    },
+    {
+        "nombre": "Finca Flamencos",
+        "lugar": "Banco de Arena",
+        "ciudad": "Cucuta",
+        "precio": "$ 80.000",
+        "img": "/imgs/hospedaje/nortesantander/4.png",
+        "contacto": "+57 317 111 11 11"
+    },
+    {
+        "nombre": "Hostal Pasto Azul",
+        "lugar": "El SOldado",
+        "ciudad": "Cucuta",
+        "precio": "$ 90.000",
+        "img": "/imgs/hospedaje/nortesantander/3.png",
+        "contacto": "+57 317 222 22 22"
+    },
+    {
+        "nombre": "Hotel Orquideas ",
+        "lugar": "Ricaurte",
+        "ciudad": "Cucuta",
+        "precio": "$ 70.000",
+        "img": "/imgs/hospedaje/nortesantander/2.png",
+        "contacto": "+57 317 999 99 99"
+    }
+]

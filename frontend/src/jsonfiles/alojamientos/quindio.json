@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Finca Santa Rosa",
+        "lugar": "La Horcona",
+        "ciudad": "Armenia",
+        "precio": "$ 100.000",
+        "img": "/imgs/hospedaje/quindio/1.png",
+        "contacto": "+57 317 000 00 00"
+    },
+    {
+        "nombre": "Finca las Cascadas",
+        "lugar": "Palo",
+        "ciudad": "Armenia",
+        "precio": "$ 80.000",
+        "img": "/imgs/hospedaje/quindio/4.png",
+        "contacto": "+57 317 111 11 11"
+    },
+    {
+        "nombre": "Hostal 7 Colores",
+        "lugar": "Travesias",
+        "ciudad": "Armenia",
+        "precio": "$ 90.000",
+        "img": "/imgs/hospedaje/quindio/3.png",
+        "contacto": "+57 317 222 22 22"
+    },
+    {
+        "nombre": "Hotel el Trebol ",
+        "lugar": "Palmichan",
+        "ciudad": "Armenia",
+        "precio": "$ 70.000",
+        "img": "/imgs/hospedaje/quindio/2.png",
+        "contacto": "+57 317 999 99 99"
+    }
+]

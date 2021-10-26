@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Hostal la Tatacoa",
+        "lugar": "San Antonio de Anaconia",
+        "ciudad": "Neiva",
+        "precio": "$ 100.000",
+        "img": "/imgs/hospedaje/huila/4.png",
+        "contacto": "+57 317 000 00 00"
+    },
+    {
+        "nombre": "Finca Bambuco",
+        "lugar": "San Luis",
+        "ciudad": "Neiva",
+        "precio": "$ 80.000",
+        "img": "/imgs/hospedaje/huila/1.png",
+        "contacto": "+57 317 777 77 77"
+    },
+    {
+        "nombre": "Hostel el Indio",
+        "lugar": "Chapinero",
+        "ciudad": "Garzon",
+        "precio": "$ 90.000",
+        "img": "/imgs/hospedaje/huila/3.png",
+        "contacto": "+57 317 222 22 22"
+    },
+    {
+        "nombre": "Hotel las Orquideas ",
+        "lugar": "Aipecito",
+        "ciudad": "Huila",
+        "precio": "$ 70.000",
+        "img": "/imgs/hospedaje/huila/2.png",
+        "contacto": "+57 317 999 99 99"
+    }
+]
