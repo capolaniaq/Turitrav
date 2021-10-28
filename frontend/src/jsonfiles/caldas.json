@@ -1,0 +1,47 @@
+[
+    {   "dpto": "caldas",
+        "muni": "Manizales",
+        "lugar": "Parque Natural de los Nevados",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/caldas/1.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Si estás en el Departamento de Caldas y amas la naturaleza, ¡aprovecha y visita uno de los nevados de Colombia: el Parque Nacional Los Nevados. Este se extiende por los departamentos de Caldas, Risaralda, Quindío y Tolima."
+    },
+    {   "dpto": "Caldas",
+        "muni": "San Felix",
+        "lugar": "San Félix: La Holanda Caldense",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/caldas/2.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Al norte del Departamento de Caldas se encuentra el corregimiento San Félix, uno de los lugares más bellos de la zona. Desde hace varios años se conoce esta locación como ‘La Holanda Caldense’, gracias a sus espectaculares haciendas ganaderas y sus paisajes llenos de Palmas de Cera. "
+    },
+    {   "dpto": "Caldas",
+        "muni": "Samana - Pensilvania",
+        "lugar": "Parque Nacional Natural Selva de Florencia",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/caldas/4.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "es la única área de conservación nacional ubicada en el Oriente del Departamento de Caldas, con un 78% en territorio de Samaná y un 22% de Pensilvania. El parque es una de las zonas más lluviosas del país y alberga la mayor concentración de ranas del país."
+    },
+    {   "dpto": "Caldas",
+        "muni": "Aguadas",
+        "lugar": "Aguadas",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/caldas/3.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Aguadas, el octavo municipio en extensión del departamento, es un lugar ideal para el descanso de los viajeros. Cuenta con un clima templado gracias a la variedad de pisos térmicos que van del cálido al páramo."
+    },
+    {   "dpto": "Caldas",
+        "muni": "Villamaría",
+        "lugar": "Aldea de María",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/caldas/5.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Villamaría, fundado en 1852 con el nombre de Aldea de María, se encuentra ubicado en el extremo sur occidental del departamento, en límites con los departamentos de Risaralda y Tolima."
+    }
+]

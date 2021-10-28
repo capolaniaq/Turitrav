@@ -48,22 +48,22 @@ function FormNewUser() {
                                 <form onSubmit={handleSubmit}>
                                     <div className="datesuser">
                                         <div className="sondatesuser">
-                                            <label htmlFor="nombre">Nombre</label>
+                                            <label htmlFor="name">Nombre</label>
                                             <br />
                                             <input className="roundlog" type="text"
                                                 id="nombre"
                                                 name="nombre"
-                                                value={form.nombre}
+                                                value={form.name}
                                                 onChange={handleChange} />
                                         </div>
                                         <div className="datesuser">
                                             <div className="sondatesuser">
-                                                <label htmlFor="apellido">Apellido</label>
+                                                <label htmlFor="lastname">Apellido</label>
                                                 <br />
                                                 <input className="roundlog" type="text"
                                                     id="apellido"
                                                     name="apellido"
-                                                    value={form.apellido}
+                                                    value={form.lastname}
                                                     onChange={handleChange} />
                                             </div>
                                         </div>
@@ -71,7 +71,7 @@ function FormNewUser() {
 
                                     <div className="datesuser">
                                         <div className="sondatesuser">
-                                            <label htmlFor="nombre">Correo</label>
+                                            <label htmlFor="e-mail">Correo</label>
 
                                             <br />
                                             <input className="roundlogdatesuser" type="email"
@@ -85,7 +85,7 @@ function FormNewUser() {
                                     <div className="datesuser">
                                         <div className="sondatesuser">
 
-                                            <label htmlFor="nombre">Contraseña</label>
+                                            <label htmlFor="password">Contraseña</label>
                                             <br />
                                             <input className="roundlog" type="password"
                                                 id="password"
@@ -96,48 +96,48 @@ function FormNewUser() {
 
                                         <div className="sondatesuser">
 
-                                            <label htmlFor="nombre">Confirme Contraseña</label>
+                                            <label htmlFor="checkpass">Confirme Contraseña</label>
                                             <br />
                                             <input className="roundlog" type="password"
                                                 id="conpass"
                                                 name="conpass"
-                                                value={form.password}
+                                                value={form.checkpassword}
                                                 onChange={handleChange} />
                                         </div>
                                     </div>
 
                                     <div className="datesuser">
                                         <div className="sondatesuser">
-                                            <label htmlFor="nombre">Fecha nacimiento</label>
+                                            <label htmlFor="age">Fecha nacimiento</label>
                                             <br />
                                             <input className="roundlog" type="date"
                                                 id="edad"
                                                 name="edad"
-                                                value={form.edad}
+                                                value={form.age}
                                                 onChange={handleChange} />
 
                                         </div>
 
                                         <div className="sondatesuser">
-                                            <label htmlFor="nombre">Pais</label>
+                                            <label htmlFor="country">Pais</label>
                                             <br />
                                             <input className="roundlog" type="text"
                                                 id="Pais"
                                                 name="Pais"
-                                                value={form.Pais}
+                                                value={form.country}
                                                 onChange={handleChange} />
 
                                         </div>
                                     </div>
                                     <div className="datesuser">
                                         <div className="sondatesuser">
-                                            <label htmlFor="celular">Celular</label>
+                                            <label htmlFor="numberphone">Celular</label>
 
                                             <br />
                                             <input className="roundlogdatesuser" type="text"
                                                 id="celular"
                                                 name="celular"
-                                                value={form.email}
+                                                value={form.numberphone}
                                                 onChange={handleChange} />
                                         </div>
                                     </div>

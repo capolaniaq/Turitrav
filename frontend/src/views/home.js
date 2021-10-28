@@ -150,15 +150,17 @@ function PageWrapper() {
 
             <div class="col-md-4">
               <div >
+                <a href="/boyaca">
                 <img class="img-place" src="imgs/home/1.png" alt="cocuy" />
-
+                </a>
               </div>
             </div>
 
             <div class="col-md-4">
               <div >
-                <img class="img-place" src="imgs/home/4.png" alt="cocuy" />
-
+                <a href="/huila">
+                  <img class="img-place" src="imgs/home/4.png" alt="cocuy" />
+                </a>
               </div>
             </div>
 

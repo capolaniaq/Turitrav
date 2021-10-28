@@ -1,5 +1,6 @@
 
 function ModulePlaces(props) {
+    console.log(props);
 
     return (
         <div>

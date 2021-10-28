@@ -1,0 +1,47 @@
+[
+    {   "dpto": "Norte de Santander",
+        "muni": "Chitagá",
+        "lugar": "Laguna Comagüeta",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/nortesantander/1.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Está en el municipio de Chitagá a 3 horas de Cúcuta. La laguna está a una altura de 3.432 m.s.n.m a una hora y 30 min del pueblo."
+    },
+    {   "dpto": "Norte de Santander",
+        "muni": "Cácota",
+        "lugar": "Laguna de Cácota",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/nortesantander/2.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Esta a 2.900 m.s.n.m. en el municipio del mismo nombre a 2 hr y 30 min de la capital de Norte de Santander."
+    },
+    {   "dpto": "Norte de Santander",
+        "muni": "Mutiscua",
+        "lugar": "Laguna Súrcura",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/nortesantander/3.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Está en Mutiscua, en el parque Natural Regional Santurbán. La capital de la trucha Arcoíris está a 2 hr y 30 min de Cúcuta."
+    },
+    {   "dpto": "Norte de Santander",
+        "muni": "Cucutilla",
+        "lugar": "La Laguna Quelpa",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/nortesantander/4.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Esta belleza natural se encuentra en Cucutilla, Norte de Santander. Para llegar a ella hay que caminar por lo menos 8  u 11 desde al casco urbano del municipio."
+    },
+    {   "dpto": "Norte de Santander",
+        "muni": "Arboledas",
+        "lugar": "Laguna Brava",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/nortesantander/5.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Está en Arboledas, “la Fábrica del agua” en la región centro del departamento. El municipio está a 3 horas de “la perla del norte”."
+    }
+]

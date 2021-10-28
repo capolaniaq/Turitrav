@@ -1,0 +1,47 @@
+[
+    {   "dpto": "Huila",
+        "muni": "Acevedo",
+        "lugar": "Parque la cueva de los Guacharos",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/huila/1.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "En límites con el departamento de Caquetá, a lo largo del río Suaza, hay un sistema de cavernas al amparo de la selva virgen."
+    },
+    {   "dpto": "Huila",
+        "muni": "Páez",
+        "lugar": "Nevado del Huila",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/huila/2.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Además de sus fastuosos paisajes, el Nevado del Huila posee una inmensa riqueza hídrica compuesta por un sistema de lagunas, arroyos, quebradas y ríos que le tributan sus aguas a la Cuenca del río Magdalena y la Cuenca del río Cauca."
+    },
+    {   "dpto": "Huila",
+        "muni": "Neiva",
+        "lugar": "Embalse de Betania",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/huila/3.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "La Represa o Embalse de Betania está ubicada a 38 Km. de Neiva, en la vía que conduce al municipio de Hobo. Su temmperatura aproximada 27 oC."
+    },
+    {   "dpto": "Huila",
+        "muni": "Paicol",
+        "lugar": "Cascadas Paicol",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/huila/4.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Paicol, Huila, es un pueblo escondido entre las montañas del sur de Colombia y el río Páez, un lugar que posee un estilo muy especial en sus calles y muchos atractivos naturales con un sello de aventura y paisajismo."
+    },
+    {   "dpto": "Huila",
+        "muni": "San Agustin.",
+        "lugar": "Parque Arqueológico de San Agustín",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/huila/5.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Es el mayor testimonio arqueológico del país. es su complejo se encuentran esculturas líticas de la cultura agustiniana, cuenta con caminos terraplenes, sarcófagos monolíticos, dolmenes, la fuente ceremonial del lavapatas, el alto del lavapatas, el museo Luis Duque Gomez, el bosque de las estatuas y las mesitas A, B, C y D."
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {   "dpto": "Cundinamarca",
+        "muni": "Zipaquira",
+        "lugar": "Catedral de Sal",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/cundinamarca/1.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "La Catedral de Sal es una de las obras de ingeniería más importantes de Colombia; y al mismo tiempo, uno de los principales atractivos turísticos del departamento de Cundinamarca."
+    },
+    {   "dpto": "Cundinamarca",
+        "muni": "Guatavita",
+        "lugar": "Laguna de Guatavita",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/cundinamarca/2.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Probablemente sea el plan más popular de este pueblo, se trata de una laguna con una gran importancia histórica y una belleza incomparable. Cuando visites la Laguna te recomendamos hacer una visita guiada para que puedas aprender mucho más sobre sus ecosistemas y la importancia del lugar para la Cultura Muisca."
+    },
+    {   "dpto": "cundinamarca",
+        "muni": "Suesca",
+        "lugar": "Cañón de la Lechuza",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/cundinamarca/3.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "En la vereda Santa Rosa, de Suesca, el río Bogotá llega de Villapinzón y conforma un pequeño y tranquilo lago rodeado por altas paredes de roca que se conoce como el Cañón de la Lechuza y está ubicado a 45 minutos a pie de la vía que entra al casco urbano del municipio."
+    },
+    {   "dpto": "Cundinamarca",
+        "muni": "Villeta",
+        "lugar": "Quebrada Cune",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/cundinamarca/4.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Si quieres un lugar para admirar la belleza de la naturaleza, te recomendamos la Quebrada Cune. Este lugar que baña la población de Villeta, tiene 7 cascadas naturales llamadas Las Cascadas del Mico, siendo el principal atractivo turístico del municipio de Villeta."
+    },
+    {   "dpto": "Cundinamarca",
+        "muni": "Facatativa",
+        "lugar": "Parque Arqueológico Piedras del Tunjo",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/cundinamarca/5.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "El Parque Arqueológico de Facatativá (Piedras del Tunjo) está localizado en el municipio de Facatativá, en el departamento de Cundinamarca. Comprende aproximadamente 27 hectáreas donde se pueden encontrar abrigos rocosos, pintura rupestre y paisajes con gran riqueza ambiental."
+    }
+]

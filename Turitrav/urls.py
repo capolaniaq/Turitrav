@@ -19,7 +19,7 @@ from rest_framework import routers
 from api.views import *
 from django.conf import settings
 from django.conf.urls.static import static
-from frontend.views import *
+
 
 # Records to easily move through urls
 
@@ -31,7 +31,7 @@ router.register(r'places', PlaceViewSet)
 router.register(r'departments', DepartmentViewSet)
 router.register(r'cities', CityViewSet)
 router.register(r'activities', ActivityViewSet)
-router.register(r'place_activies', Place_activityViewSet)
+router.register(r'place_activities', Place_activityViewSet)
 router.register(r'reviews', ReviewViewSet)
 router.register(r'hostels', HostelViewSet)
 

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'api',
     'rest_framework',
     'rest_framework.authtoken',
+    'frontend',
     'corsheaders',
 ]
 
@@ -57,6 +58,10 @@ MIDDLEWARE = [
 
 
 CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+]
+
+CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
 ]
 

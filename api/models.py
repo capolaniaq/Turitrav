@@ -45,7 +45,7 @@ class Place(models.Model):
     idowner = models.ForeignKey(Owner, on_delete=models.CASCADE, serialize=True)
     lugar = models.CharField(max_length=200, blank=False)
     description = models.TextField(max_length=500, blank=False)
-    calificacion = models.FloatField(default=0.0)
+    calificacion = models.CharField(max_length=10, blank=False, default='0.0')
 
     def __str__(self):
         return self.lugar
@@ -63,8 +63,8 @@ class Place_activity(models.Model):
     """ Model to manage activities of places """
     idplace = models.ForeignKey(Place, on_delete=models.CASCADE)
     idactivity = models.ForeignKey(Activity, on_delete=models.CASCADE)
-    img = models.ImageField(blank=True, null=True)
-    img2 = models.ImageField(blank=True, null=True)
+    img = models.CharField(max_length=200, blank=False)
+    img2 = models.CharField(max_length=200, blank=False)
 
     def __str__(self):
         return "Place {}: activity {}".format(self.idplace.lugar, self.idactivity.name)
@@ -82,7 +82,7 @@ class Hostel(models.Model):
     name = models.CharField(max_length=100, blank=False)
     price = models.CharField(max_length=100, blank=False)
     idplace = models.ForeignKey(Place, on_delete=models.CASCADE)
-    img = models.ImageField(blank=True, null=True)
+    img = models.CharField(max_length=100, blank=False)
     idowner = models.ForeignKey(Owner, on_delete=models.CASCADE)
 
     def __str__(self):

@@ -1,0 +1,47 @@
+[
+    {   "dpto": "Risaralda",
+        "muni": "Santa Rosa de Cabal",
+        "lugar": "Termales de Santa Rosa de Cabal",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/risaralda/1.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Los Termales Santa Rosa de Cabal se encuentran ubicados en el municipio que lleva el mismo nombre, a pocos kilometros de Pereira. Se trata de un sitio privilegiado para la recreación y el descanso, con un entorno ecológico único. Ofreces a los visitantes montañas, cascadas y piscinas de agua termal y agua fría, así como rutas ecológicas."
+    },
+    {   "dpto": "Risaralda",
+        "muni": "Parque Natural Nacional de los Nevados",
+        "lugar": "Laguna del Otún",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/risaralda/2.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "La laguna del Otún es un embalse natural perteneciente al parque nacional natural Los Nevados, localizado a unos 3950 msnm, en ecosistema de páramo. Formada por la acción volcánica y glaciar, es alimentada principalmente por el deshielo del Nevado de Santa Isabel."
+    },
+    {   "dpto": "Risaralda",
+        "muni": "Quimbaya",
+        "lugar": "Santuario Fauna y Flora Otún Quimbaya",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/risaralda/3.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Otun quimbaya y toda la región de Ukumari, que se extiende hasta el Parque Nacional Los Nevados, son vastas áreas de bosques andinos con alta biodiversidad y están ubicadas en el corazón de la zona cafetalera de la cordillera central."
+    },
+    {   "dpto": "Risaralda",
+        "muni": "Pereira",
+        "lugar": "Parque Tatamá",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/risaralda/4.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "51.900 hectáreas de valles, fuertes pendientes y páramos; yarumos, encenillos y algarrobos; tigrillos, dantas y cusumbos. El parque está ubicado al noroccidente de Pereira."
+    },
+    {   "dpto": "Risaralda",
+        "muni": "Pereira",
+        "lugar": "Parque Nacional los Nevados",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/risaralda/5.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Ubicado al este de Risaralda, ofrece un paisaje único de Nevados del Ruiz, Tolima y Santa Isabel, así como la Laguna Otún, cuna del río Otún, que cruza la ciudad de Pereira."
+    }
+]

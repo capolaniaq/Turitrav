@@ -5,8 +5,23 @@ import ModulePlaces from "../moduleplaces";
 
 
 function PlaceAntioquia() {
+    let data = [];
 
-    let lugares = placeJson
+    async function getData(url='') {
+        let response = await fetch(url);
+        let data = await response.json();
+        addData(data.results);
+    }
+
+    function addData(object) {
+        for (let i = 0; i < object.length; i++) {
+            data.push(object[i]);
+        }
+    }
+
+    getData('http://localhost:8000/place_activies.json');
+
+    let lugares = data;
 
 
     return (

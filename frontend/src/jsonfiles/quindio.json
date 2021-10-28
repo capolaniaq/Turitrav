@@ -1,0 +1,47 @@
+[
+    {   "dpto": "Quindio",
+        "muni": "Armenia",
+        "lugar": "Valle de Cocora",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/quindio/1.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "A tan solo 10 kms de Salento, y 45 minutos de Armenia, la Capital del Departamento del Quindío, encontramos uno de los paisajes mas famosos del Eje Cafetero, y de toda Colombia. Lugar imperdible si desea conocer los principales sitios turisticos en el Quindio."
+    },
+    {   "dpto": "Quindio",
+        "muni": "Armenia",
+        "lugar": "Salento",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/quindio/5.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Salento es una municipalidad colombiana en el departamento del Quindío. Considerado el padre del Quindío por ser el pueblo más viejo de este departamento. También se le conoce como el municipio cuna del árbol Nacional Palma de Cera"
+    },
+    {   "dpto": "Quindio",
+        "muni": "Calarca",
+        "lugar": "El Jardín Botánico del Quindío",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/quindio/2.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "El Mariposario del Quindío, en el municipio de Calarcá, en un área de 600 metros cuadrados, es un espacio de conservación, ciencia y diversión. Además de ser el refugio de más de 1500 mariposas, alberga diversas especies de la fauna y la flora colombiana."
+    },
+    {   "dpto": "Quindio",
+        "muni": "Armenia",
+        "lugar": "Parque de la vida",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/quindio/3.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Uno de los referentes turísticos de la ciudad de Armenia, es el Parque de la Vida. Localizado al norte de la ciudad, sobre la Avenida Bolívar, principal arteria vehicular, comercial y turística de la capital del Departamento del Quindio."
+    },
+    {   "dpto": "Quindio",
+        "muni": "Calarca",
+        "lugar": "Recuca",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/quindio/4.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Recuca es un lugar donde el turista es bienvenido con un café preparado en aguapanela. Allí es transformado en actor. Con traje típico, canasto y machete al cinto comienza un largo recorrido que lo transporta por la historia del grano desde Etiopía, Arabia y Holanda llegando aquí a América."
+    }    
+]

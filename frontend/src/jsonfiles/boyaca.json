@@ -1,0 +1,47 @@
+[
+    {   "dpto": "Boyaca",
+        "muni": "Cocuy",
+        "lugar": "Sierra Nevada del Cocuy",
+        "categoria": "Montañismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/boyaca/1.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "Este Parque Nacional Natural de 306 mil hectáreas de extensión se encuentra en el centro oriente de la cordillera oriental, entre los departamentos de Boyacá , Arauca  y Casanare .Con una temperatura que oscila entre los 20º Centígrados y -4º Centígrados, el Parque es un sitio único para encontrarse con un tipo de naturaleza diferente ya que se conecta con la cordillera por el occidente y con el llano por el oriente."
+    },
+    {   "dpto": "Boyaca",
+        "muni": "Raquira",
+        "lugar": "Patio de Brujas",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/boyaca/2.png",
+        "img2": "/imgs/icons/mountain.png",
+        "descripcion": "El lugar es un observatorio astronómico construido con tótems de arcilla de forma fálica, formando un anillo en torno un tótem central, los once tótems mayores marcan la salida del sol durante los solsticios y equinoccios, los tótems menores se utilizan para la medición de los movimientos de la luna, los tótems están decorados con iconografía prehispánica de culturas como la Tolima, Sinú, Muisca, Maya, Inca, y Nazca entre otras."
+    },
+    {   "dpto": "Boyaca",
+        "muni": "Arcabuco",
+        "lugar": "Santuario de Fauna y Flora Iguaque",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/boyaca/3.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Creado en 1.977, es una de las 46 áreas Naturales del país, ubicada a 2.400 a 3.800 mts sobre el nivel del mar, clima frío, 12 grados de temperatura, con una extensión de 6.750 hectáreas."
+    },
+    {   "dpto": "Boyaca",
+        "muni": "Cerinza",
+        "lugar": "Laguna Careperro",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/boyaca/4.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "Este hermoso lugar se encuentra ubicado en la cima del Monte Careperro, una vez allí y después de haber cruzado un sendero de casi tres horas de camino usted se encontrará a 3.600 metros sobre el nivel del mar."
+    },
+    {   "dpto": "Boyaca",
+        "muni": "Sogamoso.",
+        "lugar": "Laguna de Tota",
+        "categoria": "Senderismo",
+        "calificacion": "5.0",
+        "img": "/imgs/places/boyaca/5.png",
+        "img2": "/imgs/icons/adventurer.png",
+        "descripcion": "El Lago o Laguna de Tota, es el más grande de Colombia y el tercero en Suramérica, siendo uno de los recursos hidrológicos más importantes del país, no sólo por los usos que se le dan a sus aguas, sino por la riqueza paisajística que de manera permanente ofrece."
+    }
+]
