@@ -42,7 +42,8 @@ class City(models.Model):
 class Place(models.Model):
     """ Model to manage  places """
     muni = models.ForeignKey(City, on_delete=models.CASCADE)
-    idowner = models.ForeignKey(Owner, on_delete=models.CASCADE, serialize=True)
+    idowner = models.ForeignKey(Owner, on_delete=models.CASCADE,
+                                serialize=True)
     lugar = models.CharField(max_length=200, blank=False)
     description = models.TextField(max_length=500, blank=False)
     calificacion = models.CharField(max_length=10, blank=False, default='0.0')
@@ -67,12 +68,14 @@ class Place_activity(models.Model):
     img2 = models.CharField(max_length=200, blank=False)
 
     def __str__(self):
-        return "Place {}: activity {}".format(self.idplace.lugar, self.idactivity.name)
+        return "Place {}: activity {}".format(self.idplace.lugar,
+                                              self.idactivity.name)
 
 
 class Review(models.Model):
     """ Model to manage reviews """
-    idplace_activity = models.ForeignKey(Place_activity, on_delete=models.CASCADE)
+    idplace_activity = models.ForeignKey(Place_activity,
+                                         on_delete=models.CASCADE)
     iduser = models.ForeignKey(User, on_delete=models.CASCADE)
     review = models.TextField(max_length=500, blank=False)
 
@@ -87,5 +90,6 @@ class Hostel(models.Model):
 
     def __str__(self):
         """print information about hostel"""
-        return 'Hostel: {}, by {} on {}'.format(self.name, self.idowner.username, self.idplace.lugar)
-
+        return 'Hostel: {}, by {} on {}'.format(self.name,
+                                                self.idowner.username,
+                                                self.idplace.lugar)

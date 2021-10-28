@@ -36,14 +36,14 @@ router.register(r'reviews', ReviewViewSet)
 router.register(r'hostels', HostelViewSet)
 
 
-
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 # Urls to handle the data
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('api-auth/', include('rest_framework.urls',
+                              namespace='rest_framework')),
     path('login/', Login.as_view(), name='login'),
     path('logout/', Logout.as_view()),
 ]
