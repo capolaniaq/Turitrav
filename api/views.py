@@ -96,28 +96,28 @@ class Login(FormView):
 
     @method_decorator(csrf_protect)
     @method_decorator(never_cache)
-    def dispatch(self,request,*args,**kwargs):
+    def dispatch(self, request, *args, **kwargs):
         """ Function to check authentication """
         if request.user.is_authenticated:
             return HttpResponseRedirect(self.get_success_url())
         else:
-            return super(Login,self).dispatch(request,*args,*kwargs)
+            return super(Login, self).dispatch(request, *args, *kwargs)
 
-
-    def form_valid(self,form):
+    def form_valid(self, form):
         """ Function to validate the Login """
-        user = authenticate(username = form.cleaned_data['username'], password = form.cleaned_data['password'])
-        token,_ = Token.objects.get_or_create(user = user)
+        user = authenticate(username=form.cleaned_data['username'],
+                            password=form.cleaned_data['password'])
+        token, _ = Token.objects.get_or_create(user=user)
         login(self.request, form.get_user())
-        return super(Login,self).form_valid(form)
+        return super(Login, self).form_valid(form)
 
 
 class Logout(APIView):
     """ Class to manage the logout of a user """
-    def get(self, request, format = None):
+    def get(self, request, format=None):
         data = reverse_lazy('api-root')
         if request.user.is_authenticated:
             logout(request)
-            return Response(status = status.HTTP_200_OK)
+            return Response(status=status.HTTP_200_OK)
         else:
             return HttpResponseRedirect(data)
