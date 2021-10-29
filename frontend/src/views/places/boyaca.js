@@ -1,12 +1,12 @@
 import React from "react";
-import placeJson from '../../jsonfiles/boyaca.json';
 import MainHeader from "../headertt";
+import fetchData from "../fetchData";
 import ModulePlaces from "../moduleplaces";
 
 
 function PlaceBoyaca() {
 
-    let lugares = placeJson
+    let lugares = fetchData('http://localhost:8000/place_activities.json', 'Boyaca');
 
 
     return (
@@ -15,12 +15,12 @@ function PlaceBoyaca() {
             {lugares.map(places =>
                 <ModulePlaces place={places.lugar}
                     calificacion={places.calificacion}
-                    dpto={places.dpto}
+                    dpto={places.department}
                     mun={places.muni}
                     categoria={places.categoria}
                     img={places.img}
                     img2={places.img2}
-                    descrip={places.descripcion} />
+                    descrip={places.description} />
             )}
         </div>
     )

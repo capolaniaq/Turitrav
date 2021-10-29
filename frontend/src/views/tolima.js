@@ -1,23 +1,17 @@
 import React from "react";
-import tolimaJson from '../jsonfiles/tolima.json'
 import MainHeader from "./headertt";
 import ModulePlaces from "./moduleplaces";
+import FetchData from "./fetchData";
 
 
 function Tolima() {
 
-    let list = [];
-    let data_results = fetch('http://localhost:8000/place_activities.json').then(response => response.json())
+    let list_places = FetchData('http://localhost:8000/place_activities.json','Tolima');
 
-    data_results.then(data => {
-        list = data.results;
-    })
-
-    let lugares = list;
 		return (
         <div>
             <MainHeader/>
-            {lugares.map(places =>
+            {list_places.map(places =>
                 <ModulePlaces place={places.lugar}
                     calificacion={places.calificacion}
                     dpto={places.department}
