@@ -1,6 +1,8 @@
 # <p align="center">  <img src="/frontend/public/imgs/icons/icono.png" width="50"></p> 
 # Turitrav
 
+There is a small problem in Colombia at the moment and it is that there are few pages or websites that provide tourist help on the different activities that can be found in the country and this can generate problems when looking for what activities to find. Here then why Turitrav was created.
+
 Tutitrav is a platform where you can find many eco-tourist places in different cities and towns of the Andean region in Colombia and also find hotels and accommodations near these beautiful places in the middle of nature.
 
 ## Usage
