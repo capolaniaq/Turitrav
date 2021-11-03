@@ -7,8 +7,8 @@ function ModuleAlojamiento(props) {
             </div>
             <div className="sonhos">
                 <div>
-                    <img className="iconHos" src="/imgs/icons/star.png" />
-                    <img className="iconHos" src="/imgs/icons/corazon.png" />
+                    <img className="iconHos" src="/imgs/icons/star1.png" />
+                    <img className="iconHos" src="/imgs/icons/corazon1.png" />
                 </div>
                 <div>
                     <br />

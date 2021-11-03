@@ -33,8 +33,7 @@ function FormNewUser() {
                 <div className="fcformnewuser">
                     <div className="subcontainer">
                         <div className="imgnewuser" >
-                            <img src="imgs/campista1.jpg" width="500px" />
-
+                            <img className="img-new-user" src="imgs/campista.jpg" width="500px" />
                         </div>
                     </div>
                     <div className="subcontainer">
@@ -163,7 +162,7 @@ function FormNewUser() {
                                         name="terminos"
                                         required
                                         onChange={handleChecked} />
-                                    <label htmlFor="terminos">Acepto terminos y condiciones  </label>
+                                    <label htmlFor="terminos">Acepto términos y condiciones.  </label>
                                     <br />
                                     <br />
                                     <input className="opcioncreate" type="submit" value="CREAR CUENTA" />

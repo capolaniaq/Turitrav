@@ -41,15 +41,15 @@ class City(models.Model):
 
 class Place(models.Model):
     """ Model to manage  places """
-    muni = models.ForeignKey(City, on_delete=models.CASCADE)
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
     idowner = models.ForeignKey(Owner, on_delete=models.CASCADE,
                                 serialize=True)
-    lugar = models.CharField(max_length=200, blank=False)
+    place_name = models.CharField(max_length=200, blank=False)
     description = models.TextField(max_length=500, blank=False)
-    calificacion = models.CharField(max_length=10, blank=False, default='0.0')
+    calification = models.CharField(max_length=10, blank=False, default='0.0')
 
     def __str__(self):
-        return self.lugar
+        return self.place_name
 
 
 class Activity(models.Model):

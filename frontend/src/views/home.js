@@ -5,10 +5,10 @@ function PageWrapper() {
   return (
     <div>
       <header className="header">
-        <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
-              <img className="logo" src="imgs/newturitravrm.png" />
+              <img className="logo" src="imgs/icons/icono.png" />
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -20,16 +20,16 @@ function PageWrapper() {
                     Descubre
                   </a>
                   <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a className="dropdown-item" href="/antioquia"><img className="iconuser" src="imgs/icons/brujula.png" />Antioquia</a></li>
-                    <li><a className="dropdown-item" href="/boyaca"><img className="iconuser" src="imgs/icons/brujula.png" />Boyacá</a></li>
-                    <li><a className="dropdown-item" href="/caldas"><img className="iconuser" src="imgs/icons/brujula.png" />Caldas</a></li>
-                    <li><a className="dropdown-item" href="/cundinamarca"><img className="iconuser" src="imgs/icons/brujula.png" />Cundinamarca</a></li>
-                    <li><a className="dropdown-item" href="/huila"><img className="iconuser" src="imgs/icons/brujula.png" />Huila</a></li>
-                    <li><a className="dropdown-item" href="/nortesantander"><img className="iconuser" src="imgs/icons/brujula.png" />Norte de Santander</a></li>
-                    <li><a className="dropdown-item" href="/quindio"><img className="iconuser" src="imgs/icons/brujula.png" />Quindio</a></li>
-                    <li><a className="dropdown-item" href="/risaralda"><img className="iconuser" src="imgs/icons/brujula.png" />Risaralda</a></li>
-                    <li><a className="dropdown-item" href="/santander"><img className="iconuser" src="imgs/icons/brujula.png" />Santander</a></li>
-                    <li><a className="dropdown-item" href="/tolima"><img className="iconuser" src="imgs/icons/brujula.png" />Tolima</a></li>
+                    <li><a className="dropdown-item" href="/antioquia">Antioquia</a></li>
+                    <li><a className="dropdown-item" href="/boyaca">   Boyacá</a></li>
+                    <li><a className="dropdown-item" href="/caldas">   Caldas</a></li>
+                    <li><a className="dropdown-item" href="/cundinamarca">   Cundinamarca</a></li>
+                    <li><a className="dropdown-item" href="/huila">   Huila</a></li>
+                    <li><a className="dropdown-item" href="/nortesantander">   Norte de Santander</a></li>
+                    <li><a className="dropdown-item" href="/quindio">   Quindio</a></li>
+                    <li><a className="dropdown-item" href="/risaralda">   Risaralda</a></li>
+                    <li><a className="dropdown-item" href="/santander">   Santander</a></li>
+                    <li><a className="dropdown-item" href="/tolima">   Tolima</a></li>
                   </ul>
                 </li>
 
@@ -44,7 +44,7 @@ function PageWrapper() {
                     <li><a className="dropdown-item" href="/flora"><img className="iconuser" src="imgs/icons/leaves.png" />Flora</a></li>
                     <li><a className="dropdown-item" href="/fauna"><img className="iconuser" src="imgs/icons/paw.png" />Fauna</a></li>
                     <li><a className="dropdown-item" href="/culture"><img className="iconuser" src="imgs/icons/culture.png" />Cultura</a></li>
-                    <li><a className="dropdown-item" href="/gastronomy"><img className="iconuser" src="imgs/icons/salad.png" />Gastronomia</a></li>
+                    <li><a className="dropdown-item" href="/gastronomy"><img className="iconuser" src="imgs/icons/salad.png" />Gastronomía</a></li>
                   </ul>
                 </li>
 
@@ -53,10 +53,10 @@ function PageWrapper() {
                 </li>
 
               </ul>
-              <div>
-                <input className="round" type="search" placeholder="  Search" />
+              {/* <div>
+                <input className="round" type="search" placeholder="  Buscar" />
 
-              </div>
+              </div> */}
               <form className="d-flex">
 
                 <button className="btn" type="submit"><img className="iconoh" src="imgs/2.png" /></button>
@@ -76,13 +76,18 @@ function PageWrapper() {
               </form>
             </div>
           </div>
-
         </nav>
+
+        <div class="textos-header">
+          <p className="text-turitrav"><b>T u r i t r a v</b></p>
+          <a href="/formnewuser"><h4><b><input className="clickhospedador" type="button" value="Sé un Turitraver!" /></b></h4></a>
+
+        </div>
+
       </header>
 
-
       <div className="titulo">
-        <img src="imgs/places/2.png" />
+        <img className="banner0" src="imgs/places/2.png" />
 
       </div>
 
@@ -91,51 +96,65 @@ function PageWrapper() {
       </div>
       <div className="cont2">
         <div class="container">
-          <div class="row">
+          <div class="row category">
 
             <div class="col-md-3">
-              <div >
-                <a href="/fauna">
-                  <img class="img-place" src="imgs/fauna/1.png" alt="fauna" />
-                </a>
-                <div class="card-body">
-                  <h3 class="descrip"><b>Fauna</b></h3>
+              <div className="imagen-port">
+                <img class="img-place" src="imgs/fauna/1.png" alt="fauna" />
+                <div class="hover-galeria">
+                  <a href="/fauna">
+                    <img src="/imgs/icons/paw.png" alt="" />
+                  </a>
                 </div>
               </div>
+              <a className="descrip" href="/gastronomia">
+                <h3 className="descrip" ><b>Fauna</b></h3>
+              </a>
             </div>
 
             <div class="col-md-3">
-              <div >
-                <a href="/flora">
-                  <img class="img-place" src="imgs/flora0.png" alt="cocuy" />
-                </a>
-                <div class="card-body">
-                  <h3 class="descrip"><b>Flora</b></h3>
+              <div className="imagen-port">
+                <img class="img-place" src="imgs/flora0.png" alt="flora" />
+                <div class="hover-galeria">
+                  <a href="/flora">
+                    <img src="/imgs/icons/leaves.png" alt="" />
+                  </a>
                 </div>
               </div>
+              <a className="descrip" href="/gastronomia">
+                <h3 className="descrip" ><b>Flora</b></h3>
+              </a>
             </div>
 
             <div class="col-md-3">
-              <div >
-                <a href="/culture">
-                  <img class="img-place" src="imgs/cultura0.png" alt="cocuy" />
-                </a>
-                <div class="card-body">
-                  <h3 class="descrip"><b>Cultura</b></h3>
+              <div className="imagen-port">
+                <img class="img-place" src="imgs/cultura0.png" alt="cultura" />
+                <div class="hover-galeria">
+                  <a href="/culture">
+                    <img src="/imgs/icons/culture.png" alt="" />
+                  </a>
                 </div>
               </div>
+              <a className="descrip" href="/gastronomia">
+                <h3 className="descrip" ><b>Cultura</b></h3>
+              </a>
             </div>
 
             <div class="col-md-3">
-              <div >
-                <a href="/gastronomy">
-                  <img class="img-place" src="imgs/gastro0.png" alt="cocuy" />
-                </a>
-                <div class="card-body">
-                  <h3 class="descrip"><b>Gastronomia</b> </h3>
+              <div className="imagen-port">
+                <img class="img-place" src="imgs/gastro0.png" alt="gastronomia" />
+                <div class="hover-galeria">
+                  <a href="/gastronomia">
+                    <img src="/imgs/icons/salad.png" alt="" />
+                  </a>
                 </div>
               </div>
+              <a className="descrip" href="/gastronomia">
+                <h3 className="descrip" ><b>Gastronomía</b></h3>
+              </a>
+
             </div>
+
           </div>
         </div>
       </div>
@@ -145,35 +164,78 @@ function PageWrapper() {
       </div>
 
       <div className="cont2">
-        <div class="container">
-          <div class="row">
+        <div className="container">
+          <div className="row">
 
-            <div class="col-md-4">
-              <div >
-                <a href="/boyaca">
-                <img class="img-place" src="imgs/home/1.png" alt="cocuy" />
-                </a>
+            <div className="col-md-4">
+              <div className="imagen-port">
+
+                <img className="img-place" src="imgs/home/1.png" alt="cocuy" />
+
+                <div class="hover-galeria">
+                  <a href="/boyaca">
+                    <img src="/imgs/icons/ave2.png" alt="" />
+                  </a>
+                  <h4><b>Vamos!</b></h4>
+                </div>
+
               </div>
             </div>
 
-            <div class="col-md-4">
-              <div >
-                <a href="/huila">
-                  <img class="img-place" src="imgs/home/4.png" alt="cocuy" />
-                </a>
+            <div className="col-md-4">
+              <div className="imagen-port">
+
+                <img className="img-place" src="imgs/home/4.png" alt="cocuy" />
+
+                <div class="hover-galeria">
+                  <a href="/huila">
+                    <img src="/imgs/icons/ave2.png" alt="" />
+                  </a>
+                  <h4><b>Vamos!</b></h4>
+                </div>
               </div>
             </div>
 
-            <div class="col-md-4">
-              <div >
-                <a href="/tolima">
-                  <img class="img-place" src="imgs/home/3.png" alt="cocuy" />
-                </a>
+            <div className="col-md-4">
+              <div className="imagen-port">
+
+                <img className="img-place" src="imgs/home/3.png" alt="cocuy" />
+                <div class="hover-galeria">
+                  <a href="/tolima">
+                    <img src="/imgs/icons/ave2.png" alt="" />
+                  </a>
+                  <h4><b>Vamos!</b></h4>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
+
+      <div className="row turitravers">
+        <div>
+        <h1><b>Turitravers</b></h1>
+        </div>
+        <div className="col-lg-5 row clients">
+          <div className="col-lg-4">
+            <img className="img-turitraver" src="/imgs/home/6.png" />
+          </div>
+          <div className="col-lg-7">
+            <h5>Turitrav me ha permitido conocer maravillas de la naturaleza en nuestro país que no imagina que podía llegar a tener.</h5>
+          </div>
+        </div>
+        <div className="col-lg-5 row clients">
+          <div className="col-lg-4">
+            <img className="img-turitraver" src="/imgs/home/5.png" />
+          </div>
+          <div className="col-lg-7">
+            <h5>Poder encontrar hermosos paisajes escondidos ha sido lo mejor gracias a turitrav.</h5>
+          </div>
+        </div>
+      </div>
+
+
 
       <MainFooter />
 

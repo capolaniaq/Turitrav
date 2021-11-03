@@ -44,7 +44,7 @@ function App() {
       <Route excat path="/flora" component={FuncFlora} />
       <Route excat path="/fauna" component={FuncFauna} />
       <Route excat path="/culture" component={FuncCultura} />
-      <Route excat path="/gastronomy" component={FuncGastro} />
+      <Route excat path="/gastronomia" component={FuncGastro} />
       <Route excat path="/formlogin" component={FormLogIn} />
       <Route excat path="/formnewuser" component={FormNewUser} />
 
@@ -71,11 +71,34 @@ function App() {
       <Route exact path="/risaralda" component={PlaceRisaralda}/>
       <Route exact path="/quindio" component={PlaceQuindio}/>
       <Route exact path="/santander" component={PlaceSantander}/>
-      <Route exact path="/tolima" component={Tolima}/>
+      <Route exact path="/tolima" component={Tolima}/>      
+      
       <Route component={NotFound}/>
 
       </Switch>
     </BrowserRouter>
+
+
+            
+
+    
+
+    // <div className="App">
+    //   <header className="App-header">
+    //     <img src={logo} className="App-logo" alt="logo" />
+    //     <p>
+    //       Edit <code>src/App.js</code> and save to reload.
+    //     </p>
+    //     <a
+    //       className="App-link"
+    //       href="https://reactjs.org"
+    //       target="_blank"
+    //       rel="noopener noreferrer"
+    //     >
+    //       Learn React
+    //     </a>
+    //   </header>
+    // </div>
   );
 }
 

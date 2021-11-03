@@ -91,8 +91,12 @@ WSGI_APPLICATION = 'Turitrav.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'turitrav_db',
+        'USER': 'turitrav_user',
+        'PASSWORD': 'ca82882828',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 

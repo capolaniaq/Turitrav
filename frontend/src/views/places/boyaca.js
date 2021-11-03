@@ -1,23 +1,23 @@
 import React from "react";
+import FetchData from "../fetchData";
 import MainHeader from "../headertt";
-import fetchData from "../fetchData";
 import ModulePlaces from "../moduleplaces";
 
 
 function PlaceBoyaca() {
 
-    let lugares = fetchData('http://localhost:8000/place_activities.json', 'Boyaca');
+    let list_places = FetchData('http://localhost:8000/place_activities.json','Boyaca');
 
 
     return (
         <div>
             <MainHeader />
-            {lugares.map(places =>
-                <ModulePlaces place={places.lugar}
-                    calificacion={places.calificacion}
+            {list_places.map(places =>
+                <ModulePlaces place={places.place_name}
+                    calificacion={places.calification}
                     dpto={places.department}
-                    mun={places.muni}
-                    categoria={places.categoria}
+                    mun={places.city}
+                    categoria={places.category}
                     img={places.img}
                     img2={places.img2}
                     descrip={places.description} />

@@ -18,6 +18,9 @@ venv.bak/
 *~
 
 
+# sql files
+*.sql
+
 # Django
 db.sqlite3
 media/
@@ -47,3 +50,7 @@ yarn-error.log*
 
 #migrations
 migrations/0*
+
+
+# node_modules
+node_modules/

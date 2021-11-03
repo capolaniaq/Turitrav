@@ -4,3 +4,4 @@ pygments==2.10.0
 httpie==2.5.0
 Pillow==8.4.0
 django-cors-headers==3.10.0
+mysqlclient==1.4.6

@@ -7,6 +7,7 @@ function Prueba(props){
             <HeaderPrueba />
             {props.children}
         </div>
+        
     )
 }
 

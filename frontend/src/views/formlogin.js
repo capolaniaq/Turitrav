@@ -38,7 +38,7 @@ function FormLogIn() {
                         <div className="sonform">
                             <form onSubmit={handleSubmit}>
 
-                                <label htmlFor="nombre">USERNAME</label>
+                                <label htmlFor="nombre">USUARIO</label>
                                 <br />
                                 <input className="roundlog" type="text"
                                     id="nombre"
@@ -47,7 +47,7 @@ function FormLogIn() {
                                     onChange={handleChange} /><br /><br />
 
 
-                                <label htmlFor="nombre">PASSWORD</label>
+                                <label htmlFor="nombre">CONTRASEÑA</label>
                                 <br />
                                 <input className="roundlog" type="password"
                                     id="password"
@@ -58,7 +58,7 @@ function FormLogIn() {
                             </form>
                             <div className="sonform">
                                 <br />
-                                <p>__________________________________</p>
+                                
                                 <div className="sonsonform">
 
                                     <ion-icon size="large" name="logo-google" />
@@ -73,11 +73,11 @@ function FormLogIn() {
                             <div className="sonform">
 
                                 <div className="opcionuser">
-                                    <div className="sonopcionuser">
-                                        <p><img src="imgs/usernew.png" />CREAR CUENTA</p>
+                                    <div className="sonopcionuser1">
+                                        <p><a href="/formnewuser"> <img src="imgs/usernew.png" /><input className="opcioncreate1" type="submit" value="CREAR CUENTA" /></a></p>
                                     </div>
-                                    <div className="sonopcionuser">
-                                        <p><img src="imgs/help.png" />OLVIDE MI CONTRASEÑA</p>
+                                    <div className="sonopcionuser1">
+                                        <p><a href="/formnewuser"> <img src="imgs/help.png" /><input className="opcioncreate1" type="submit" value="OLVIDÉ MI CONTRASEÑA" /></a></p>
                                     </div>
                                 </div>
                             </div>

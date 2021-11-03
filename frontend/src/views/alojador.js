@@ -7,7 +7,7 @@ function FuncAlojador() {
             <header className="header2" >
                 <nav className="navbar2">
                         <a href="/">
-                            <img className="logohospedador" src="/imgs/icons/logoblue.png" alt="" width="60" />
+                            <img className="logohospedador" src="/imgs/icons/icono.png" alt="" width="50" />
                         </a>
                 </nav>
             </header>
@@ -19,10 +19,10 @@ function FuncAlojador() {
                 </div>
                 <div className="col-6">
                     <div className="textohospedador">
-                        <p><b>Brinda tus servicios de hospadaje y/o turismo cuando quieras</b></p>
+                        <p><b>Brinda tus servicios de hospadaje o turismo cuando quieras</b></p>
                     </div>
                     <div className="textohospedador">
-                        <h4><b><input className="clickhospedador" type="button" value="Vamos !" /></b></h4>
+                        <h4><b><input className="clickhospedador" type="button" value="Vamos!" /></b></h4>
                     </div>
                 </div>
             </div>

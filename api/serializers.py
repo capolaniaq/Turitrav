@@ -54,19 +54,19 @@ class CitySerializer(serializers.ModelSerializer):
 class PlaceSerializer(serializers.ModelSerializer):
     """ Serializer for places """
     department = serializers.SerializerMethodField()
-    muni = serializers.SerializerMethodField()
+    city = serializers.SerializerMethodField()
 
     class Meta:
         model = Place
         fields = ['id', 'idowner', 'department',
-                  'muni', 'lugar', 'description', 'calificacion']
+                  'city', 'place_name', 'description', 'calification']
 
     def get_department(self, obj):
         """ data from other models that we are going to handle """
-        return obj.muni.iddepartment.name
+        return obj.city.iddepartment.name
 
-    def get_muni(self, obj):
-        return obj.muni.name
+    def get_city(self, obj):
+        return obj.city.name
 
 
 class ActivitySerializer(serializers.ModelSerializer):
@@ -79,39 +79,39 @@ class ActivitySerializer(serializers.ModelSerializer):
 class Place_activitySerializer(serializers.ModelSerializer):
     """ Serializer for activities of places """
     department = serializers.SerializerMethodField()
-    muni = serializers.SerializerMethodField()
-    lugar = serializers.SerializerMethodField()
+    city = serializers.SerializerMethodField()
+    place_name = serializers.SerializerMethodField()
     description = serializers.SerializerMethodField()
-    calificacion = serializers.SerializerMethodField()
-    categoria = serializers.SerializerMethodField()
+    calification = serializers.SerializerMethodField()
+    category = serializers.SerializerMethodField()
 
     class Meta:
         model = Place_activity
         fields = ['id', 'idplace', 'idactivity',
-                  'department', 'muni', 'lugar',
-                  'description', 'calificacion', 'categoria', 'img', 'img2']
+                  'department', 'city', 'place_name',
+                  'description', 'calification', 'category', 'img', 'img2']
 
     def get_department(self, obj):
         """ Function for get department by place_activity"""
-        return obj.idplace.muni.iddepartment.name
+        return obj.idplace.city.iddepartment.name
 
-    def get_muni(self, obj):
+    def get_city(self, obj):
         """Function for get city by place_activity"""
-        return obj.idplace.muni.name
+        return obj.idplace.city.name
 
-    def get_lugar(self, obj):
+    def get_place_name(self, obj):
         """Function for get place by place_activity"""
-        return obj.idplace.lugar
+        return obj.idplace.place_name
 
     def get_description(self, obj):
         """Function for get description by place_activity"""
         return obj.idplace.description
 
-    def get_calificacion(self, obj):
+    def get_calification(self, obj):
         """Function for calication city by place_activity"""
-        return obj.idplace.calificacion
+        return obj.idplace.calification
 
-    def get_categoria(self, obj):
+    def get_category(self, obj):
         """Function for get category by place_activity"""
         return obj.idactivity.name
 
@@ -142,12 +142,12 @@ class HostelSerializer(serializers.ModelSerializer):
 
     def get_place(self, obj):
         """Function that get place for hostels"""
-        return obj.idplace.lugar
+        return obj.idplace.place_name
 
     def get_department(self, obj):
         """Function that get department for hostels"""
-        return obj.idplace.muni.iddepartment.name
+        return obj.idplace.city.iddepartment.name
 
     def get_city(self, obj):
         """Function that get city for hostels"""
-        return obj.idplace.muni.name
+        return obj.idplace.city.name

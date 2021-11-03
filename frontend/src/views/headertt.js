@@ -6,7 +6,7 @@ function MainHeader() {
             <nav className="navbar sticky-top navbar-expand-lg fixed-top navbar-light bg-light">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
-                        <img className="logo" src="imgs/newturitravrm.png" />
+                        <img className="logo" src="imgs/icons/icono.png" />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -15,19 +15,19 @@ function MainHeader() {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Descubre
+                                Descubre
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a className="dropdown-item" href="/antioquia"><img className="iconuser" src="imgs/icons/brujula.png" />Antioquia</a></li>
-                                    <li><a className="dropdown-item" href="/boyaca"><img className="iconuser" src="imgs/icons/brujula.png" />Boyacá</a></li>
-                                    <li><a className="dropdown-item" href="/caldas"><img className="iconuser" src="imgs/icons/brujula.png" />Caldas</a></li>
-                                    <li><a className="dropdown-item" href="/cundinamarca"><img className="iconuser" src="imgs/icons/brujula.png" />Cundinamarca</a></li>
-                                    <li><a className="dropdown-item" href="/huila"><img className="iconuser" src="imgs/icons/brujula.png" />Huila</a></li>
-                                    <li><a className="dropdown-item" href="/nortesantander"><img className="iconuser" src="imgs/icons/brujula.png" />Norte de Santander</a></li>
-                                    <li><a className="dropdown-item" href="/quindio"><img className="iconuser" src="imgs/icons/brujula.png" />Quindio</a></li>
-                                    <li><a className="dropdown-item" href="/risaralda"><img className="iconuser" src="imgs/icons/brujula.png" />Risaralda</a></li>
-                                    <li><a className="dropdown-item" href="/santander"><img className="iconuser" src="imgs/icons/brujula.png" />Santander</a></li>
-                                    <li><a className="dropdown-item" href="/tolima"><img className="iconuser" src="imgs/icons/brujula.png" />Tolima</a></li>
+                                    <li><a className="dropdown-item" href="/antioquia">    Antioquia</a></li>
+                                    <li><a className="dropdown-item" href="/boyaca">    Boyacá</a></li>
+                                    <li><a className="dropdown-item" href="/caldas">    Caldas</a></li>
+                                    <li><a className="dropdown-item" href="/cundinamarca">    Cundinamarca</a></li>
+                                    <li><a className="dropdown-item" href="/huila">    Huila</a></li>
+                                    <li><a className="dropdown-item" href="/nortesantander">    Norte de Santander</a></li>
+                                    <li><a className="dropdown-item" href="/quindio">    Quindio</a></li>
+                                    <li><a className="dropdown-item" href="/risaralda">    Risaralda</a></li>
+                                    <li><a className="dropdown-item" href="/santander">    Santander</a></li>
+                                    <li><a className="dropdown-item" href="/tolima">    Tolima</a></li>
                                 </ul>
                             </li>
 
@@ -52,7 +52,7 @@ function MainHeader() {
 
                         </ul>
                         <div>
-                            <input className="round" type="search" placeholder="  Search" />
+                            <input className="round" type="search" placeholder="  Buscar" />
 
                         </div>
                         <form className="d-flex">
