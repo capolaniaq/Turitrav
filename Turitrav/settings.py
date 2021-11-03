@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-g^z4fzccp$0jxobt*)1=hih9))rzw^stk9-wsdxy8b2!r^no19
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.turitrav.live', '3.134.115.240']
 
 
 # Application definition
